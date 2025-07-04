@@ -5,6 +5,8 @@ import { RiSearch2Line } from "react-icons/ri"
 import logo from '../assets/image/logo.png'
 
 
+import { RiUserLine } from "react-icons/ri";
+
 
 const Navbar = () => {
 return (
@@ -23,11 +25,14 @@ return (
      <  RiSearch2Line className='text-2xl text-praymary ' />
         <input className='navinp w-full border-none outline-none text-[14px] font-normal text-praymary font-praymary ' placeholder='Search in products... ' id='navinp' type="text" />
 
-
       </div>
 
 
-      <div className="nav_icons"></div>
+      <div className="nav_icons">
+
+     <button><RiUserLine/></button>
+
+      </div>
 
     </div>
 
