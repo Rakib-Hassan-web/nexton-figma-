@@ -6,6 +6,8 @@ import logo from '../assets/image/logo.png'
 
 
 import { RiUserLine } from "react-icons/ri";
+import { CiShoppingCart } from "react-icons/ci";
+
 
 
 const Navbar = () => {
@@ -31,6 +33,7 @@ return (
       <div className="nav_icons">
 
      <button><RiUserLine/></button>
+     <button><CiShoppingCart/></button>
 
       </div>
 
