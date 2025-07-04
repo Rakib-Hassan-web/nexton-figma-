@@ -15,7 +15,9 @@ const Navbar = () => {
 return (
 <>
 
-  <nav className='container py-[27px]  hidden lg:block ' id='navbar'>
+
+{/* ------------dark mood ar jonno dark:bg-black---------- */}
+  <nav className='container py-[27px]  hidden lg:block  ' id='navbar'>
 
 
     <div className="nav_row flex justify-between items-center">

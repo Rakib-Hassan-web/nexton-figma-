@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import reslogo from '../assets/image/reslogo.png'
 import { Link } from 'react-router'
@@ -6,6 +6,11 @@ import { RiSearch2Line } from "react-icons/ri"
 
 
 const ResNavbar = () => {
+
+const [crossNav,setcrossNav]=useState(false)
+
+console.log(crossNav)
+
 return (
 <>
 
@@ -30,19 +35,48 @@ return (
 
             </div>
 
-            <div className='w-[25px] h-[20px] relative '>
- 
-
-           <span className='1bar w-full h-[2px] bg-praymary  absolute top-0'></span>
-           <span className='2bar w-full h-[2px] bg-praymary absolute top-[50%]' ></span>
-           <span className='2bar w-full h-[2px] bg-praymary absolute top-[100%]'></span>
+            <div onClick={()=> setcrossNav(!crossNav)} className='w-[25px] h-[20px] relative ' >
 
 
+                <span className={` ${crossNav?'rotate-45 top-[20px] ': ' rotate-0 top-0'} 1bar w-full h-[2px]
+                    bg-praymary left-0 absolute duration-[.4s] `}></span>
+                <span className={` ${crossNav? 'hidden' : 'block' } 2bar w-full h-[2px] bg-praymary absolute top-[50%]
+                    left-0 duration-[.4s] `}></span>
+                <span className={` ${crossNav?'rotate-[-45deg] top-[20px]': '' } 2bar w-full h-[2px] bg-praymary
+                    absolute left-0 top-[100%] duration-[.4s]`}></span>
+
+            </div>
+
+            
+
+
+
+            <div className={` ${crossNav? 'scale-100 ' :'scale-0 '}  duration-[.6s]   absolute w-[90%] bg-praymary top-[80px] rounded-[25px]  flex justify-center items-center p-[18px]`}>
+
+                <ul className=' flex gap-2 flex-col font-praymary text-white text-xl '>
+
+                    <li>
+                        <Link>Home</Link>
+                    </li>
+                    <li>
+                        <Link>Shop Now</Link>
+                    </li>
+                    <li>
+                        <Link>About</Link>
+                    </li>
+                    <li>
+                        <Link>Add To Cart</Link>
+                    </li>
+                </ul>
 
             </div>
 
 
-<div></div>
+
+
+            
+
+
 
 
         </div>
