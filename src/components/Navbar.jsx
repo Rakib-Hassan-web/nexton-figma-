@@ -18,10 +18,10 @@ return (
       <Link className="nav_LOGO w-[119px] " id='nav_LOGO'><img src={logo} alt="" /></Link>
 
 
-      <div className="navsearch w-[400px] h-[52px]  bg-[#F8F8F8] rounded-[100px] " id='navsearch'>
+      <div className="navsearch w-[400px] h-[52px]  bg-[#F8F8F8] rounded-[100px] flex items-center gap-[10px] pl-[24px] " id='navsearch'>
 
-     <RiSearch2Line />
-        <input className='navinp w-[full] p-[7px]' id='navinp' type="text" />
+     <  RiSearch2Line className='text-2xl ' />
+        <input className='navinp w-full border-none outline-none text-xl  ' id='navinp' type="text" />
 
 
       </div>
