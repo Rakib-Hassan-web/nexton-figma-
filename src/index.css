@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+
+
+
+/* ------------container----- */
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
