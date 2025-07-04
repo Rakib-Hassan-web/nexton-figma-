@@ -34,7 +34,11 @@ return (
       <div className="nav_icons " id='nav_icons'>
 
      <button className='user_icon text-2xl text-praymary  mr-[22px]' id='user_icon'><RiUserLine/></button>
-     <button  className='cart_icon text-2xl text-praymary ' id='cart_icon'  ><RiShoppingCartLine/></button>
+     <button  className='cart_icon text-2xl text-praymary ' id='cart_icon'  ><RiShoppingCartLine/>
+     <div className='h-[20px] w-[20px] bg-[#0EA5E9] rounded-full text-[12px] text-white font-praymary  font-normal flex justify-center items-center'>3</div>
+     
+     
+     </button>
 
       </div>
 
