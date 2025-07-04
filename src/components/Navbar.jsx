@@ -15,12 +15,12 @@ const Navbar = () => {
 return (
 <>
 
-  <div className='container py-[27px]  ' id='navbar'>
+  <nav className='container py-[27px]  ' id='navbar'>
 
 
     <div className="nav_row flex justify-between items-center">
 
-      <Link className="nav_LOGO w-[119px] " id='nav_LOGO'><img src={logo} alt="" /></Link>
+      <Link to={'/'} className="nav_LOGO w-[119px] " id='nav_LOGO'><img src={logo} alt="" /></Link>
 
 
       <div className="navsearch w-[400px] h-[52px]  bg-[#F8F8F8] rounded-[100px] flex items-center gap-[10px] pl-[24px] " id='navsearch'>
@@ -46,7 +46,7 @@ return (
 
 
 
-  </div>
+  </nav>
 
 
 
