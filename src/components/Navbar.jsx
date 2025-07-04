@@ -15,7 +15,7 @@ const Navbar = () => {
 return (
 <>
 
-  <nav className='container py-[27px]  ' id='navbar'>
+  <nav className='container py-[27px]  hidden lg:block ' id='navbar'>
 
 
     <div className="nav_row flex justify-between items-center">
