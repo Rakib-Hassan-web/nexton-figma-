@@ -15,7 +15,7 @@ const Navbar = () => {
 return (
 <>
 
-
+<h1>hi</h1>
 {/* ------------dark mood ar jonno dark:bg-black---------- */}
   <nav className='container py-[27px]  hidden lg:block  ' id='navbar'>
 
