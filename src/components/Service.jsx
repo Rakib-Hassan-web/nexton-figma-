@@ -1,7 +1,7 @@
 import React from 'react'
 import Singleservice from './comon/Singleservice'
 import { TbTruckDelivery } from 'react-icons/tb'
-import { RiExchange2Line } from 'react-icons/ri'
+import { RiExchange2Line, RiRefund2Line } from 'react-icons/ri'
 import { TfiWorld } from 'react-icons/tfi'
 
 const Service = () => {
@@ -19,12 +19,14 @@ const Service = () => {
             <Singleservice  servicebigtxt={'Worldwide delivery'} serviceicon={  <TfiWorld className='text-3xl' />} servicesmlltxt={'Fast delivery worldwide'}/>
             <span className=' w-[1px]  h-[50px] bg-[#E5E7EB] inline-block'></span>
 
-          <Singleservice  servicebigtxt={'Very easy to return'} serviceicon={  <RiExchange2Line className='text-3xl' />} servicesmlltxt={'Just phone number'}/>
+          <Singleservice  servicebigtxt={''} serviceicon={  <RiRefund2Line className='text-3xl' />} servicesmlltxt={''}/>
             
         </div>
     </div>
    </section>
    
+ 
+
 
 
    
