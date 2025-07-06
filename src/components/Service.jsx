@@ -10,22 +10,22 @@ const Service = () => {
    
    <section id='service'  >
     <div className=''>
-        <div className="serviceRow container border mt-[52px] py-6 border-[#E5E7EB] rounded-[16px] flex justify-around items-center">
+        <div className="serviceRow container lg:border mt-[52px]  pt-[52px]  lg:py-6 border-[#E5E7EB] rounded-[16px] flex lg:justify-around lg:items-center flex-wrap  pl-6 ">
+            <h2 className='font-semibold font-praymary text-base text-second lg:hidden'>Nexton® always with you</h2>
             <Singleservice  servicebigtxt={'Free shipping'} serviceicon={  <TbTruckDelivery className='text-3xl' />} servicesmlltxt={'On orders over $50.00'}/>
-            <span className=' w-[1px]  h-[50px] bg-[#E5E7EB] inline-block'></span>
+            <span className='  lg:w-[1px]  lg:h-[50px] lg:bg-[#E5E7EB] lg:inline-block'></span>
              <Singleservice  servicebigtxt={'Very easy to return'} serviceicon={  <RiExchange2Line className='text-3xl' />} servicesmlltxt={'Just phone number'}/>
-            <span className=' w-[1px]  h-[50px] bg-[#E5E7EB] inline-block'></span>
+                      <span className='  lg:w-[1px]  lg:h-[50px] lg:bg-[#E5E7EB] lg:inline-block'></span>
 
             <Singleservice  servicebigtxt={'Worldwide delivery'} serviceicon={  <TfiWorld className='text-3xl' />} servicesmlltxt={'Fast delivery worldwide'}/>
-            <span className=' w-[1px]  h-[50px] bg-[#E5E7EB] inline-block'></span>
-
+                     <span className='  lg:w-[1px]  lg:h-[50px] lg:bg-[#E5E7EB] lg:inline-block'></span>
           <Singleservice  servicebigtxt={'Refunds policy'} serviceicon={  <RiRefund2Line className='text-3xl' />} servicesmlltxt={'60 days return for any reason'}/>
             
         </div>
     </div>
    </section>
 
-   <h1>hi</h1>
+  
    
  
 
