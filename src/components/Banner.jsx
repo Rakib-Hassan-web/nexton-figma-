@@ -11,6 +11,9 @@ const Banner = () => {
 
 <div className='container pl-[24px] lg:pl-0'>
 <h1 className='text-praymary text-[14px] lg:text-[20px] font-praymary font-medium'>Starting from: $49.99</h1>
+<h2 className='text-second lg:text-[64px] text-[30px] font-semibold font-praymary lg:w-[632px] w-[312px] leading-[38px] lg:leading-[72px] lg:my-[24px]  mt-[8px] mb-[30px]'>Exclusive collection
+for everyone</h2>
+
 
         </div>
     </section>
