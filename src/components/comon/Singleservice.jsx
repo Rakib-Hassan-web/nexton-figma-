@@ -9,13 +9,13 @@ const Singleservice = ( {serviceicon ,servicebigtxt,servicesmlltxt}) => {
     
     
     
-    <div className="serviceBow flex  items-center  gap-[16px] ">
+    <div className="serviceBow flex  items-center  lg:gap-[16px]  ">
        {serviceicon}
  
    <div className="boxtxt">
-    <h2 className='text-[18px] font-medium font-praymary text-second'>
+    <h2 className='lg:text-[18px] text-[14px]   font-normal lg:font-medium font-praymary lg:text-second text-praymary'>
         {servicebigtxt}</h2>
-    <h2 className='text-praymary font-praymary  text-[14px] font-normal'>
+    <h2 className='text-praymary font-praymary  text-[14px] font-normal hidden lg:block'>
         {servicesmlltxt}
     </h2>
    </div>
