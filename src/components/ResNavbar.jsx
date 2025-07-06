@@ -5,6 +5,11 @@ import { Link } from 'react-router'
 import { RiSearch2Line } from "react-icons/ri"
 
 
+import { RiUserLine } from "react-icons/ri";
+import { RiShoppingCartLine } from "react-icons/ri";
+
+
+
 const ResNavbar = () => {
 
 const [crossNav,setcrossNav]=useState(false)
@@ -47,34 +52,26 @@ return (
 
             </div>
 
-            
+
 
 
 
             <div className={` ${crossNav? 'scale-100 ' :'scale-0 '}  duration-[.6s]   absolute w-[90%] bg-praymary top-[80px] rounded-[25px]  flex justify-center items-center p-[18px]`}>
 
                 <ul className=' flex gap-2 flex-col font-praymary text-white text-xl '>
-
-                    <li>
-                        <Link>Home</Link>
-                    </li>
-                    <li>
-                        <Link>Shop Now</Link>
-                    </li>
-                    <li>
-                        <Link>About</Link>
-                    </li>
-                    <li>
-                        <Link>Add To Cart</Link>
-                    </li>
+                  <button className=' user_icon text-2xl text-white ' id='user_icon'>
+                    <RiUserLine /></button>
+                <button className='cart_icon text-2xl text-white relative' id='cart_icon'>
+                    <RiShoppingCartLine /> </button>
                 </ul>
+     {/* <div id='cart_massage' className=' absolute top-[41px] right-[147px]   cart_massage h-[20px] w-[20px] bg-[#0EA5E9] rounded-full text-[12px] text-white font-praymary  font-normal flex justify-center items-center'>3</div> */}
 
             </div>
 
 
 
 
-            
+
 
 
 
