@@ -6,25 +6,26 @@ const SingleExplore = ( {exploreBigtext,exploreSmalltxt,explorebutton}) => {
 return (
 <>
 
+    <div className="exploreROW flex justify-between items-center">
+        <div className="exploreBigtextt text-second font-semibold font-praymary text-[24px]">
+            {exploreBigtext}
+        <div className="exploreSmalltxtt   text-praymary font-normal font-praymary text-[14px] ">
 
-    <div className="exploreBigtextt text-second font-semibold font-praymary text-[24px]">
-        {exploreBigtext}
+            {exploreSmalltxt}
+        </div>
+        </div>
+
+        <div className="explorebuttonn flex justify-between items-center gap-4">
+        <span className='  lg:w-[3px]  lg:h-[40px] lg:bg-[#E5E7EB] lg:inline-block'></span>
+
+
+            <Link className='font-praymary font-medium text-[14px] text-praymary'>Shop Now
+            <FaArrowRightLong className='text-xl' />
+            </Link>
+            {explorebutton}
+        </div>
+
     </div>
-
-    <div className="exploreSmalltxtt   text-praymary font-normal font-praymary text-[14px] ">
-
-    {exploreSmalltxt}
-    </div>
-     <span className='  lg:w-[3px]  lg:h-[36px] lg:bg-[#E5E7EB] lg:inline-block'></span>
-    <div className="explorebuttonn">
-
-        
-        <Link className=''>Shop Now <FaArrowRightLong />
-        </Link>
-        {explorebutton}
-    </div>
-
-
 
 
 
