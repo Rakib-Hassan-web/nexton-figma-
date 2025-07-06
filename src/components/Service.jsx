@@ -16,7 +16,7 @@ const Service = () => {
              <Singleservice  servicebigtxt={'Very easy to return'} serviceicon={  <RiExchange2Line className='text-3xl' />} servicesmlltxt={'Just phone number'}/>
             <span className=' w-[1px]  h-[50px] bg-[#E5E7EB] inline-block'></span>
 
-            <Singleservice  servicebigtxt={''} serviceicon={  <TfiWorld className='text-3xl' />} servicesmlltxt={''}/>
+            <Singleservice  servicebigtxt={'Worldwide delivery'} serviceicon={  <TfiWorld className='text-3xl' />} servicesmlltxt={'Fast delivery worldwide'}/>
             <span className=' w-[1px]  h-[50px] bg-[#E5E7EB] inline-block'></span>
 
           <Singleservice  servicebigtxt={'Very easy to return'} serviceicon={  <RiExchange2Line className='text-3xl' />} servicesmlltxt={'Just phone number'}/>
