@@ -19,11 +19,13 @@ const Service = () => {
             <Singleservice  servicebigtxt={'Worldwide delivery'} serviceicon={  <TfiWorld className='text-3xl' />} servicesmlltxt={'Fast delivery worldwide'}/>
             <span className=' w-[1px]  h-[50px] bg-[#E5E7EB] inline-block'></span>
 
-          <Singleservice  servicebigtxt={''} serviceicon={  <RiRefund2Line className='text-3xl' />} servicesmlltxt={''}/>
+          <Singleservice  servicebigtxt={'Refunds policy'} serviceicon={  <RiRefund2Line className='text-3xl' />} servicesmlltxt={'60 days return for any reason'}/>
             
         </div>
     </div>
    </section>
+
+   <h1>hi</h1>
    
  
 
