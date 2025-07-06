@@ -19,9 +19,7 @@ return (
         <span className='  lg:w-[3px]  lg:h-[40px] lg:bg-[#E5E7EB] lg:inline-block'></span>
 
 
-            <Link className='font-praymary font-medium text-[14px] text-praymary'>Shop Now
-            <FaArrowRightLong className='text-xl' />
-            </Link>
+          
             {explorebutton}
         </div>
 
