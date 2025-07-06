@@ -9,39 +9,38 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Expolre = () => {
 
-const settings = {
+const ResExpolre = () => {
+    const settings = {
 dots: true,
 infinite: true,
 speed: 500,
-slidesToShow: 3,
+slidesToShow: 1,
 slidesToScroll: 1
 };
 
-return (
-<>
-
-
-
-    <section id='Explore ' className='mt-[88px] hidden lg:block '>
+  return (
+    <>
+    
+    
+     <section id='Explore ' className='mt-[88px] block lg:hidden '>
 
         <div className="container ">
-            <h2 className=' w-[881px]font-praymary lg:text-[36px] text-[24px] font-semibold text-second mb-[40px]'> Start exploring.
-<span className='font-praymary lg:text-[36px] font-semibold text-praymary hidden lg:block '> Good things are waiting for
+            <h2 className='font-praymary lg:text-[36px] text-[24px] font-semibold text-second mb-[40px]'> Start exploring.
+                <span className='font-praymary text-[36px] font-semibold text-praymary hidden lg:block '> Good things are waiting for
                     you</span>
             </h2>
 
             <Slider {...settings}>
-                <div className="EXPLORE  w-full flex  flex-wrap justify-between items-center ">
+                <div className="EXPLORE  w-full flex  flex-wrap !gap-40 items-center ">
                     <div className='!'>
-                        <div className='border  w-[312px] lg:w-[419px] px-[40px] py-[40px] inline-block rounded-[16px] border-[#E5E7EB]'>
+                        <div className='border  w-[312px] lg:w-[419px] p-[40px] inline-block rounded-[16px] border-[#E5E7EB]'>
 
 
                             <SingleExplore exploreBigtext={"For Men's"} exploreSmalltxt={'Starting at $24'}
-                                explorebutton={ <Link className='font-praymary font-medium text-[14px] text-praymary'>
+                                explorebutton={ <Link className='font-praymary font-medium text-[12px] text-praymary'>
                                 Shop Now
-                                <FaArrowRightLong className='text-xl' />
+                                <FaArrowRightLong className='text-lg' />
                                 </Link>} />
                         </div>
                     </div>
@@ -92,17 +91,10 @@ return (
     </section>
 
 
-
-
-
-
-
-
-
-
-
-</>
-)
+    
+    
+    </>
+  )
 }
 
-export default Expolre
+export default ResExpolre
