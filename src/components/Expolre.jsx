@@ -33,7 +33,7 @@ return (
                   <div className='border  w-[419px] p-[40px] rounded-[16px] border-[#E5E7EB]'>
 
 
-                    <SingleExplore exploreBigtext={"For Men's"} exploreSmalltxt={'Starting at $24'} explorebutton={
+                    <SingleExplore exploreBigtext={"For Women's"} exploreSmalltxt={'Starting at $19'} explorebutton={
                         <Link className='font-praymary font-medium text-[14px] text-praymary'>Shop Now
                         <FaArrowRightLong className='text-xl' />
                         </Link>} />  
@@ -44,7 +44,7 @@ return (
                   <div className='border  w-[419px] p-[40px] rounded-[16px] border-[#E5E7EB]'>
 
 
-                    <SingleExplore exploreBigtext={"For Men's"} exploreSmalltxt={'Starting at $24'} explorebutton={
+                    <SingleExplore exploreBigtext={"Accessories"} exploreSmalltxt={'Explore accessories'} explorebutton={
                         <Link className='font-praymary font-medium text-[14px] text-praymary'>Shop Now
                         <FaArrowRightLong className='text-xl' />
                         </Link>} />  
@@ -56,7 +56,7 @@ return (
                 <div className='border  w-[419px] p-[40px] rounded-[16px] border-[#E5E7EB]'>
 
 
-                    <SingleExplore exploreBigtext={"For Men's"} exploreSmalltxt={'Starting at $24'} explorebutton={
+                    <SingleExplore exploreBigtext={"For Kid's"} exploreSmalltxt={'Starting at $24'} explorebutton={
                         <Link className='font-praymary font-medium text-[14px] text-praymary'>Shop Now
                         <FaArrowRightLong className='text-xl' />
                         </Link>} />  
