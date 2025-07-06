@@ -11,7 +11,7 @@ import Slider from "react-slick";
 
 const Banner = () => {
 var settings = {
-dots: true,
+dots: true ,
 infinite: true,
 speed: 500,
 slidesToShow: 1,
@@ -24,8 +24,8 @@ return (
             >
 
 
-<div  style={{background:`url(${bannerimg})` ,backgroundRepeat:'no-repeat' ,backgroundSize:'cover' , backgroundPosition:'left'}}
-            className='w-full  lg:pt-[148px] lg:pb-[168px] pt-[163px] pb-[199px] mt-[10px] lg:mt-0 '>
+<div id='bannerbg1' style={{background:`url(${bannerimg})` ,backgroundRepeat:'no-repeat' ,backgroundSize:'cover' , backgroundPosition:'left'}}
+            className='w-full  lg:pt-[148px] lg:pb-[168px] pt-[163px] pb-[199px] mt-[10px] lg:mt-0 slick' >
 
             <div className='container pl-[24px] lg:pl-0'>
                 <h1 className='text-praymary text-[14px] lg:text-[20px] font-praymary font-medium'>Starting from: $49.99
@@ -51,7 +51,7 @@ return (
             >
 
 
-<div style={{background:`url(${bgextra})` ,backgroundRepeat:'no-repeat' ,backgroundSize:'cover' , backgroundPosition:'left'}}
+<div  id='bannerbg2' style={{background:`url(${bgextra})` ,backgroundRepeat:'no-repeat' ,backgroundSize:'cover' , backgroundPosition:'left'}}
             className='w-full  lg:pt-[148px] lg:pb-[168px] pt-[163px] pb-[199px] mt-[10px] lg:mt-0 '>
             <div className='container pl-[24px] lg:pl-0'>
                 <h1 className='text-praymary text-[14px] lg:text-[20px] font-praymary font-medium'>Starting from: $49.99
