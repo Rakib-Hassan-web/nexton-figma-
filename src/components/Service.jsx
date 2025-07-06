@@ -15,7 +15,7 @@ const Service = () => {
             <Singleservice/>
             <span className=' w-[1px]  h-[50px] bg-[#E5E7EB] inline-block'></span>
             <Singleservice/>
-            
+             hi
         </div>
     </div>
    </section>
