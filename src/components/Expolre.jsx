@@ -28,7 +28,7 @@ return (
 
         <div className="container ">
             <h2 className=' w-[881px]font-praymary lg:text-[36px] text-[24px] font-semibold text-second mb-[40px]'> Start exploring.
-<span className='font-praymary lg:text-[36px] font-semibold text-praymary hidden lg:block '> Good things are waiting for
+<span className='font-praymary lg:text-[36px] font-semibold text-praymary  '> Good things are waiting for
                     you</span>
             </h2>
 
