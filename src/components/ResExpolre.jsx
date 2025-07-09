@@ -67,16 +67,27 @@ return (
 
 
 
+                <div className='border  w-[419px] py-[40px] px-6 rounded-[16px] lg:ml-[-80px] border-[#E5E7EB]'>
 
-                <div className='border  w-[419px] p-[40px] rounded-[16px] lg:ml-[-40px] border-[#E5E7EB]'>
+                    <SingleExplore exploreBigtext={"Accessories"} exploreSmalltxt={'Explore accessories'} explorebutton={
+                        <Link
+                        className='font-praymary font-medium text-[14px] text-praymary flex items-center pl-3 gap-[8px]'>
+                        Shop
+                        Now
+
+                        <FaArrowRightLong className='text-xl' />
+                        </Link>} />
+                </div>
+
+                {/* <div className='border  w-[419px] p-[40px] rounded-[16px] lg:ml-[-40px] border-[#E5E7EB]'>
 
 
-                    <SingleExplore exploreBigtext={"Accessories"} exploreSmalltxt={'Explore accessories'}
+                    <SingleExplore exploreBigtext={""} exploreSmalltxt={''}
                         explorebutton={ <Link className='font-praymary font-medium text-[14px] text-praymary'>Shop
                         Now
                         <FaArrowRightLong className='text-xl' />
                         </Link>} />
-                </div>
+                </div> */}
 
 
 
