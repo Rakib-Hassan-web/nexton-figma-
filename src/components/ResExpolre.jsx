@@ -51,7 +51,7 @@ slidesToScroll: 1
 
 
 
-                <div className='border  w-[419px] p-[40px] rounded-[16px] lg:ml-[-80px] border-[#E5E7EB]'>
+                <div className='border  w-[419px] py-[40px] px-6 rounded-[16px] lg:ml-[-80px] border-[#E5E7EB]'>
 
                     <SingleExplore exploreBigtext={"For Women's"} exploreSmalltxt={'Starting at $19'} explorebutton={
                         <Link className='font-praymary font-medium text-[14px] text-praymary'>Shop

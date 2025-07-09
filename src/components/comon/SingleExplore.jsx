@@ -6,7 +6,7 @@ const SingleExplore = ( {exploreBigtext,exploreSmalltxt,explorebutton}) => {
 return (
 <>
 
-    <div className="exploreROW w-full lg:flex lg:justify-between lg:items-center px-[10px] ">
+    <div className="exploreROW w-full lg:flex lg:justify-between lg:items-center flex justify-between items-center    px-[10px] ">
         <div className="exploreBigtextt  text-second font-semibold font-praymary text-[20px] lg:text-[24px]   ">
             {exploreBigtext}
             <div className="exploreSmalltxtt   text-praymary font-normal font-praymary text-[14px] ">
