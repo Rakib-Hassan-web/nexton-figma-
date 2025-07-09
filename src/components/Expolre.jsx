@@ -82,7 +82,7 @@ return (
 
 
                     <SingleExplore exploreBigtext={"For Kid's"} exploreSmalltxt={'Starting at $24'} explorebutton={
-                        <Link className='font-praymary font-medium text-[14px] text-praymary'>Shop Now
+                        <Link className='font-praymary font-medium text-[14px] text-praymary flex gap-[8px] items-center pl-[12px] '>Shop Now
                         <FaArrowRightLong className='text-xl' />
                         </Link>} />
                 </div>
