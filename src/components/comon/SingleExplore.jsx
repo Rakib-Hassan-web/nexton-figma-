@@ -6,23 +6,26 @@ const SingleExplore = ( {exploreBigtext,exploreSmalltxt,explorebutton}) => {
 return (
 <>
 
-    <div className="exploreROW w-full lg:flex lg:justify-between lg:items-center ">
-        <div className="exploreBigtextt  text-second font-semibold font-praymary text-[20px] lg:text-[24px] py-[30px]  px-[10px]">
+    <div className="exploreROW w-full lg:flex lg:justify-between lg:items-center px-[10px] ">
+        <div className="exploreBigtextt  text-second font-semibold font-praymary text-[20px] lg:text-[24px]   ">
             {exploreBigtext}
-        <div className="exploreSmalltxtt   text-praymary font-normal font-praymary text-[14px] ">
+            <div className="exploreSmalltxtt   text-praymary font-normal font-praymary text-[14px] ">
 
-            {exploreSmalltxt}
-        </div>
-        </div>
-
-        <div className="explorebuttonn w-[113px] lg:flex lg:justify-between lg:items-center lg:gap-2">
-        <span className='  lg:w-[3px]  lg:h-[40px] lg:bg-[#E5E7EB] lg:inline-block'></span>
-
-
-          
-            {explorebutton}
+                {exploreSmalltxt}
+            </div>
         </div>
 
+
+
+        <div className="meia flex ">
+            <div className="explorebuttonn w-[113px] flex items-center lg:gap-2 ">
+
+
+
+                <span className='  lg:w-[3px]  lg:h-[40px] lg:bg-[#E5E7EB] lg:inline-block'></span>
+                {explorebutton}
+            </div>
+        </div>
     </div>
 
 
