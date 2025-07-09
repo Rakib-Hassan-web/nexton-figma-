@@ -78,7 +78,7 @@ return (
 
 
 
-                <div className='border  w-[419px] p-[40px] rounded-[16px] lg:ml-[-20px]  border-[#E5E7EB]'>
+                <div className='border  w-[419px] p-[40px] rounded-[16px] lg:ml-[-20px]  border-[#E5E7EB]'>      
 
 
                     <SingleExplore exploreBigtext={"For Kid's"} exploreSmalltxt={'Starting at $24'} explorebutton={

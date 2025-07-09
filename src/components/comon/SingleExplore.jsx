@@ -30,7 +30,7 @@ return (
 
 
 
-                <span className='  lg:w-[3px]  lg:h-[40px] lg:bg-[#E5E7EB] lg:inline-block'></span>
+                <span className='  w-[3px] h-[32px]   lg:w-[3px]  lg:h-[40px] bg-[#E5E7EB] inline-block'></span>
                 {explorebutton}
             </div>
         </div>

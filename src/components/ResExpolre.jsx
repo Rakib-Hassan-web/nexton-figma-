@@ -56,6 +56,7 @@ slidesToScroll: 1
                     <SingleExplore exploreBigtext={"For Women's"} exploreSmalltxt={'Starting at $19'} explorebutton={
                         <Link className='font-praymary font-medium text-[14px] text-praymary flex items-center pl-3 gap-[8px]'>Shop
                         Now
+                        
                         <FaArrowRightLong className='text-xl' />
                         </Link>} />
                 </div>
@@ -65,6 +66,7 @@ slidesToScroll: 1
 
 
                     <SingleExplore exploreBigtext={"Accessories"} exploreSmalltxt={'Explore accessories'}
+
                         explorebutton={ <Link className='font-praymary font-medium text-[14px] text-praymary'>Shop
                         Now
                         <FaArrowRightLong className='text-xl' />
