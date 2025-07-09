@@ -57,7 +57,7 @@ return (
                 <div className='border  w-[419px] p-[40px] rounded-[16px] lg:ml-[-80px] border-[#E5E7EB]'>
 
                     <SingleExplore exploreBigtext={"For Women's"} exploreSmalltxt={'Starting at $19'} explorebutton={
-                        <Link className='font-praymary font-medium text-[14px] text-praymary'>Shop
+                        <Link className='font-praymary font-medium text-[14px] text-praymary flex gap-[8px] items-center pl-[12px] '>Shop
                         Now
                         <FaArrowRightLong className='text-xl' />
                         </Link>} />
