@@ -33,14 +33,14 @@ return (
             </h2>
 
             <Slider {...settings}>
-                <div className="EXPLORE  w-full flex   justify-between items-center ">
-                    <div className='flex '>
+                <div className="EXPLORE  w-full ">
+                    <div className=' '>
                         <div className='border   w-[312px] lg:w-[419px] px-[40px] py-[40px] inline-block rounded-[16px] border-[#E5E7EB]'>
 
 
                             <SingleExplore exploreBigtext={"For Men's"} exploreSmalltxt={'Starting at $24'}
                             
-                                explorebutton={ <Link className='font-praymary font-medium text-[14px] text-praymary'>
+                                explorebutton={ <Link className='font-praymary font-medium text-[14px] text-praymary flex gap-[8px] items-center pl-[12px] '>
                                 Shop Now
                                 <FaArrowRightLong className='text-xl' />
                                 </Link>} />

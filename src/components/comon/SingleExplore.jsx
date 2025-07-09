@@ -17,8 +17,16 @@ return (
 
 
 
+
+
+
+
+
+
+
+
         <div className="meia flex ">
-            <div className="explorebuttonn w-[113px] flex items-center lg:gap-2 ">
+            <div className="explorebuttonn flex items-center lg:gap-2 ">
 
 
 
