@@ -68,7 +68,7 @@ return (
 
 
                     <SingleExplore exploreBigtext={"Accessories"} exploreSmalltxt={'Explore accessories'}
-                        explorebutton={ <Link className='font-praymary font-medium text-[14px] text-praymary'>Shop
+                        explorebutton={ <Link className='font-praymary font-medium text-[14px] text-praymary flex gap-[8px] items-center pl-[12px] '>Shop
                         Now
                         <FaArrowRightLong className='text-xl' />
                         </Link>} />
