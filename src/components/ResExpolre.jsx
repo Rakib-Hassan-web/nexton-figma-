@@ -23,7 +23,7 @@ slidesToScroll: 1
     <>
     
     
-     {/* <section id='Explore ' className='mt-[88px] block lg:hidden '>
+     <section id='Explore ' className='mt-[88px] block lg:hidden '>
 
         <div className="container ">
             <h2 className='font-praymary lg:text-[36px] text-[24px] font-semibold text-second mb-[40px]'> Start exploring.
@@ -49,8 +49,6 @@ slidesToScroll: 1
 
 
 
-<h1>hi
-</h1>
 
 
                 <div className='border  w-[419px] p-[40px] rounded-[16px] lg:ml-[-80px] border-[#E5E7EB]'>
@@ -90,7 +88,7 @@ slidesToScroll: 1
         </div>
 
     </section>
- */}
+
 
     
     
