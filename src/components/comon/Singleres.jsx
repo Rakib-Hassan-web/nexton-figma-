@@ -23,7 +23,7 @@ const Singleres = ({ pname , pprice , pimage ,prating , pacce , pdiscount }) => 
     <div className="recoAllTxt">
 
 
-<div className="reco1sttxtrow flex items-center justify-between mt-[20px]  ">
+<div className="reco1sttxtrow flex items-center justify-between   ">
     <h2 className='font-praymary font-semibold text-second text-base'>{pname}</h2>
     <h2 className='font-praymary font-semibold text-second text-base'>{pprice}</h2>
 </div>
