@@ -1,4 +1,5 @@
 import React from 'react'
+import { HiStar } from 'react-icons/hi'
 
 const Singleres = () => {
   return (
@@ -20,17 +21,21 @@ const Singleres = () => {
     <div className="recoAllTxt">
 
 
-<div className="reco1sttxtrow ">
+<div className="reco1sttxtrow flex items-center justify-between  ">
     <h2>Black Automatic Watch</h2>
     <h2>$169.99</h2>
 </div>
 
 
-<div className="reco2ndtxtrow ">
+<div className="reco2ndtxtrow flex items-center justify-between  ">
     <p>Accessories</p>
     <p>$199.99</p>
 </div>
 
+<div className="rating">
+    <HiStar />
+
+</div>
 
 
     </div>
