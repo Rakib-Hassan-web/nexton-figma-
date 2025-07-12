@@ -1,7 +1,7 @@
 import React from 'react'
 import { HiStar } from 'react-icons/hi'
 
-const Singleres = ( name , price , image ,rating ,acce, discount) => {
+const Singleres = ({ pname , pprice , pimage ,prating , pacce , pdiscount }) => {
   return (
     <>
     
@@ -15,8 +15,8 @@ const Singleres = ( name , price , image ,rating ,acce, discount) => {
 
  <div  className='w-[320px] h-[448px]  rounded-[16px]'>
 
-    <div className="recoimg w-full h-[360px] bg-amber-100 rounded-[16px]">
-        <img src="" alt="product image" />
+    <div className="recoimg w-full h-[360px] bg-amber-100 rounded-[16px] overflow-hidden">
+        <img src={pimage} alt="product image" />
     </div>
 
 
@@ -24,19 +24,19 @@ const Singleres = ( name , price , image ,rating ,acce, discount) => {
 
 
 <div className="reco1sttxtrow flex items-center justify-between mt-[20px]  ">
-    <h2 className='font-praymary font-semibold text-second text-base'>Black Automatic Watch</h2>
-    <h2 className='font-praymary font-semibold text-second text-base'>$169.99</h2>
+    <h2 className='font-praymary font-semibold text-second text-base'>{pname}</h2>
+    <h2 className='font-praymary font-semibold text-second text-base'>{pprice}</h2>
 </div>
 
 
 <div className="reco2ndtxtrow flex items-center justify-between  ">
-    <p className='text-[14px] font-normal font-praymary text-praymary'>Accessories</p>
-    <p className='text-[14px] font-normal font-praymary text-praymary line-through'>$199.99</p>
+    <p className='text-[14px] font-normal font-praymary text-praymary'>{pacce}</p>
+    <p className='text-[14px] font-normal font-praymary text-praymary line-through'>{pdiscount}</p>
 </div>
 
 <div className="rating flex gap-1 items-center mt-[15px]">
     <HiStar className='text-[#FBBF24] text-2xl' />
-    <p className='text-[14px] font-normal font-praymary text-praymary'>4.9(98)</p>
+    <p className='text-[14px] font-normal font-praymary text-praymary'>{prating}</p>
 
 </div>
 

@@ -5,24 +5,24 @@ import Singleres from './comon/Singleres'
 
 const Recomandation = () => {
 
-// const [product , setprodect] =useState([])
+const [product , setprodect] =useState([])
 
 
 
 
 
-// useEffect(()=>{
+useEffect(()=>{
 
-// axios.get(' https://api.escuelajs.co/api/v1/products')
-// .then((res)=>{console.log(res.data)})
+axios.get(' https://api.escuelajs.co/api/v1/products')
+.then((res)=>{setprodect(res.data)})
 
-// .catch((error)=>{
-// })
-// } ,[])
-
-
+.catch((error)=>{
+})
+} ,[])
 
 
+
+console.log(product)
 return (
 <>
 
@@ -34,26 +34,23 @@ return (
         <span className='font-praymary lg:text-[36px] font-semibold text-praymary  '> Best matching products for
           you</span>
       </h2>
-     
-        <div></div>
-{/* 
-{
-
-product.map((item)=>{
-
-  console.log(item)
-})
+    
 
 
-} */}
+<div className='flex flex-wrap justify-between items-center'>
+
+  {
+    product.map((item)=>{
+      return(<Singleres/>)
+    })
+  }
+</div>
 
 
-<Singleres/>
+</div>
 
 
-
-
-    </div>
+ 
   </section>
 
 
