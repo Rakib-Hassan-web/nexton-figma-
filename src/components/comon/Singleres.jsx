@@ -32,7 +32,7 @@ const Singleres = () => {
     <p className='text-[14px] font-normal font-praymary text-praymary line-through'>$199.99</p>
 </div>
 
-<div className="rating">
+<div className="rating flex gap-1 items-center mt-[15px]">
     <HiStar />
     <p>4.9(98)</p>
 
