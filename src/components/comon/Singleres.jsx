@@ -28,8 +28,8 @@ const Singleres = () => {
 
 
 <div className="reco2ndtxtrow flex items-center justify-between  ">
-    <p>Accessories</p>
-    <p>$199.99</p>
+    <p className='text-[14px] font-normal font-praymary text-praymary'>Accessories</p>
+    <p className='text-[14px] font-normal font-praymary text-praymary line-through'>$199.99</p>
 </div>
 
 <div className="rating">
