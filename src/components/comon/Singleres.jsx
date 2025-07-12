@@ -13,7 +13,7 @@ const Singleres = () => {
  <div className="container">
     
 
- <div  className='w-[320px] h-[448px] bg-red-300 rounded-[16px]'>
+ <div  className='w-[320px] h-[448px]  rounded-[16px]'>
 
     <div className="recoimg w-full h-[360px] bg-amber-300 rounded-[16px]"></div>
 
@@ -21,9 +21,9 @@ const Singleres = () => {
     <div className="recoAllTxt">
 
 
-<div className="reco1sttxtrow flex items-center justify-between  ">
-    <h2>Black Automatic Watch</h2>
-    <h2>$169.99</h2>
+<div className="reco1sttxtrow flex items-center justify-between mt-[20px]  ">
+    <h2 className='font-praymary font-semibold text-second text-base'>Black Automatic Watch</h2>
+    <h2 className='font-praymary font-semibold text-second text-base'>$169.99</h2>
 </div>
 
 
