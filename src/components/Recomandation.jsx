@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 const Recomandation = () => {
@@ -7,12 +7,19 @@ const Recomandation = () => {
 const [product , setprodect] =useState([])
 
 
+
+
+
+useEffect(()=>{
+
 axios.get(' https://api.escuelajs.co/api/v1/products')
 .then((res)=>{console.log(res.data)})
 
 .catch((error)=>{
 })
+} ,[])
 
+console.log(product)
 
 
 return (
