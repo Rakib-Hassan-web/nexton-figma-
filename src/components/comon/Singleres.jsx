@@ -33,8 +33,8 @@ const Singleres = () => {
 </div>
 
 <div className="rating flex gap-1 items-center mt-[15px]">
-    <HiStar />
-    <p>4.9(98)</p>
+    <HiStar className='text-[#FBBF24] text-2xl' />
+    <p className='text-[14px] font-normal font-praymary text-praymary'>4.9(98)</p>
 
 </div>
 
