@@ -1,7 +1,7 @@
 import React from 'react'
 import { HiStar } from 'react-icons/hi'
 
-const Singleres = () => {
+const Singleres = ( name , price , image ,rating ,acce, discount) => {
   return (
     <>
     
@@ -15,7 +15,9 @@ const Singleres = () => {
 
  <div  className='w-[320px] h-[448px]  rounded-[16px]'>
 
-    <div className="recoimg w-full h-[360px] bg-amber-300 rounded-[16px]"></div>
+    <div className="recoimg w-full h-[360px] bg-amber-100 rounded-[16px]">
+        <img src="" alt="product image" />
+    </div>
 
 
     <div className="recoAllTxt">
