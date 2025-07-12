@@ -15,16 +15,6 @@ return (
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
         <div className="meia flex ">
             <div className="explorebuttonn flex items-center lg:gap-2 ">
 

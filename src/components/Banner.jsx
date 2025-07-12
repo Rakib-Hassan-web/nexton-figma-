@@ -35,7 +35,7 @@ return (
                     Exclusive collection
                     for everyone</h2>
 
-
+<h1>hi</h1>
                 <Link to={'#'}
                     className='bg-second flex lg:gap-3 gap-2 rounded-full items-center text-white text-[14px] lg:text-[16px] font-medium font-praymary py-[12px] lg:py-[20px] lg:pl-[36px] pl-[24px] w-fit   lg:pr-[50px] pr-[19px] hover:scale-[1.1] duration-[.4s] '>
                 Explore now
