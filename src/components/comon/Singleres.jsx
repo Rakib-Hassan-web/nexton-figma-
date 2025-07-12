@@ -34,6 +34,7 @@ const Singleres = () => {
 
 <div className="rating">
     <HiStar />
+    <p>4.9(98)</p>
 
 </div>
 
