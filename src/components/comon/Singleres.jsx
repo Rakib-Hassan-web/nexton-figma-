@@ -15,7 +15,7 @@ const Singleres = ({ pname , pprice , pimage ,prating , pacce , pdiscount }) => 
 
  <div  className='w-[320px] h-[448px]  rounded-[16px]'>
 
-    <div className="recoimg w-full h-[360px]  rounded-[16px] overflow-hidden">
+    <div className="recoimg w-full h-[360px]  rounded-[16px] overflow-hidden mt-4">
         <img src={pimage} alt="product image" />
     </div>
 
@@ -30,15 +30,15 @@ const Singleres = ({ pname , pprice , pimage ,prating , pacce , pdiscount }) => 
 
 
 <div className="reco2ndtxtrow flex items-center justify-between  ">
-    <p className='text-[14px] font-normal font-praymary text-praymary'>{pacce}</p>
+    <p className='text-[14px] font-normal font-praymary text-praymary cursor-pointer'>{pacce}</p>
     <p className='text-[14px] font-normal font-praymary text-praymary line-through'>{pdiscount}</p>
 </div>
-
+{/* 
 <div className="rating flex gap-1 items-center mt-[15px]">
     <HiStar className='text-[#FBBF24] text-2xl' />
     <p className='text-[14px] font-normal font-praymary text-praymary'>{prating}</p>
 
-</div>
+</div> */}
 
 
     </div>
