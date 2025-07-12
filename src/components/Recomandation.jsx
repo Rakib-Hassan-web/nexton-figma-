@@ -1,8 +1,10 @@
 import axios from 'axios'
-import React from 'react'
+import React, { useState } from 'react'
 
 
 const Recomandation = () => {
+
+const [product , setprodect] =useState([])
 
 
 axios.get(' https://api.escuelajs.co/api/v1/products')
