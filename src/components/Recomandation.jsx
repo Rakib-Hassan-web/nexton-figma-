@@ -1,6 +1,15 @@
+import axios from 'axios'
 import React from 'react'
 
+
 const Recomandation = () => {
+
+
+axios.get(' https://api.escuelajs.co/api/v1/products')
+.then
+
+
+
   return (
     <>
     
