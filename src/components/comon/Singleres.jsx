@@ -15,7 +15,7 @@ const Singleres = ({ pname , pprice , pimage ,prating , pacce , pdiscount }) => 
 
  <div  className='w-[320px] h-[448px]  rounded-[16px]'>
 
-    <div className="recoimg w-full h-[360px] bg-amber-100 rounded-[16px] overflow-hidden">
+    <div className="recoimg w-full h-[360px]  rounded-[16px] overflow-hidden">
         <img src={pimage} alt="product image" />
     </div>
 

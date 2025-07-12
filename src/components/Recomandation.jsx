@@ -41,7 +41,7 @@ return (
 
   {
     product.map((item)=>{
-      return(<Singleres/>)
+      return(<Singleres pimage={item.category.image}/>)
     })
   }
 </div>
