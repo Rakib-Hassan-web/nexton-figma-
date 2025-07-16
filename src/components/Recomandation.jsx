@@ -4,6 +4,7 @@ import Singleres from './comon/Singleres'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
+import { Link } from 'react-router';
 
 
 const Recomandation = () => {
@@ -118,6 +119,7 @@ return (
   }
 </div> */}
 
+   <Link className='py-3 px-6 bg-black text-base text-white font-praymary font-medium flex justify-center items-center w-fit rounded-[20px]'>See All</Link>
 
 </div>
 
