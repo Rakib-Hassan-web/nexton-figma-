@@ -6,10 +6,11 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import { Link } from 'react-router';
 
+const BestSeller = () => {
 
-const Recomandation = () => {
 
-var settings = {
+
+    var settings = {
 dots: true,
 infinite: true,
 speed: 500,
@@ -36,11 +37,8 @@ axios.get(' https://api.escuelajs.co/api/v1/products')
 console.log(product)
 
 product.length = 4
-
-return (
-<>
-
-  <section id='Recomandation' className='mt-[176px]'>
+  return (
+    <section id='bestSeller' className='mt-[136px]'>
 
     <div className="container">
       <h2 className=' w-[881px]font-praymary lg:text-[36px] text-[24px] font-semibold text-second mb-[40px]'>
@@ -118,13 +116,7 @@ return (
 
   </section>
 
-
-
-
-
-
-</>
-)
+  )
 }
 
-export default Recomandation
+export default BestSeller

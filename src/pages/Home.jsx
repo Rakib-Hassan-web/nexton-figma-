@@ -5,6 +5,7 @@ import Service from '../components/Service'
 import Expolre from '../components/Expolre'
 import ResExpolre from '../components/ResExpolre'
 import Recomandation from '../components/Recomandation'
+import BestSeller from '../components/BestSeller'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
     <Service/>
     <Expolre/>
     <Recomandation/>
+    <BestSeller/>
     
 
     </>
