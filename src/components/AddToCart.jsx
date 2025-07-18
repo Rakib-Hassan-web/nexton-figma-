@@ -1,4 +1,5 @@
 import React from 'react'
+import { RxCross1 } from 'react-icons/rx'
 import { Link } from 'react-router'
 
 const AddToCart = () => {
@@ -8,15 +9,18 @@ return (
 
     <section>
 
-        <div id='cartbg'></div>
+
 
         <div className='w-full h-screen bg-[#000000b5]  absolute top-0 left-0'>
 
             <div className='w-[500px] h-screen bg-white absolute top-0 right-0'>
 
+                     {/* -------------cart Heading------------ */}
+                <div className="Cart_heading flex  items-center mt-10 gap-55">
+                    <h2 className='text-[30px] font-semibold font-praymary text-second pl-5'>AddToCart</h2>
+                        <RxCross1 className='text-3xl cursor-pointer' />
 
-                <h2 className='text-[25px] font-semibold font-praymary text-second p-4'>AddToCart</h2>
-
+                </div>
                 <div className="allProuct  ">
                     {/* -----------single product---------- */}
                     <div className='flex  items-center justify-around  mt-15'>
@@ -139,9 +143,10 @@ return (
                     </div>
 
                     {/* -----------total_price------- */}
-                    <div className="totalPrice flex items-center justify-around mt-23">
-                    <h2 className='product_price text-[23px] text-second font-medium font-praymary'>Total Price :</h2>
-                    <h2 className='product_price text-[20px] text-second font-medium font-praymary'>160$</h2>
+                    <div className="totalPrice flex items-center justify-around mt-20">
+                        <h2 className='product_price text-[23px] text-second font-medium font-praymary'>Total Price :
+                        </h2>
+                        <h2 className='product_price text-[20px] text-second font-medium font-praymary'>160$</h2>
 
                     </div>
                     {/* ------------check out button---------- */}
