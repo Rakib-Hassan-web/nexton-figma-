@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 const AddToCart = () => {
 return (
@@ -17,7 +18,7 @@ return (
                 <h2 className='text-[25px] font-semibold font-praymary text-second p-4'>AddToCart</h2>
 
                 <div className="allProuct  ">
-{/* -----------single product---------- */}
+                    {/* -----------single product---------- */}
                     <div className='flex  items-center justify-around '>
                         <div className="singleProduct flex gap-4 items-center">
                             <div className="productimg w-[50px] h-[50px] bg-praymary rounded-2xl">
@@ -30,9 +31,9 @@ return (
                         <div className="product_price text-md text-second font-medium font-praymary ">20$</div>
 
                     </div>
-{/* -----------single product---------- */}
+                    {/* -----------single product---------- */}
 
-     <div className='flex  items-center justify-around  mt-6'>
+                    <div className='flex  items-center justify-around  mt-6'>
                         <div className="singleProduct flex gap-4 items-center">
                             <div className="productimg w-[50px] h-[50px] bg-praymary rounded-2xl">
                                 {/* image asbe */}
@@ -46,9 +47,9 @@ return (
 
                     </div>
 
-{/* -----------single product---------- */}
+                    {/* -----------single product---------- */}
 
-     <div className='flex  items-center justify-around  mt-6'>
+                    <div className='flex  items-center justify-around  mt-6'>
                         <div className="singleProduct flex gap-4 items-center">
                             <div className="productimg w-[50px] h-[50px] bg-praymary rounded-2xl">
                                 {/* image asbe */}
@@ -63,7 +64,7 @@ return (
                     </div>
                     {/* -----------single product---------- */}
 
-     <div className='flex  items-center justify-around  mt-6'>
+                    <div className='flex  items-center justify-around  mt-6'>
                         <div className="singleProduct flex gap-4 items-center">
                             <div className="productimg w-[50px] h-[50px] bg-praymary rounded-2xl">
                                 {/* image asbe */}
@@ -78,7 +79,7 @@ return (
                     </div>
                     {/* -----------single product---------- */}
 
-     <div className='flex  items-center justify-around  mt-6'>
+                    <div className='flex  items-center justify-around  mt-6'>
                         <div className="singleProduct flex gap-4 items-center">
                             <div className="productimg w-[50px] h-[50px] bg-praymary rounded-2xl">
                                 {/* image asbe */}
@@ -93,7 +94,7 @@ return (
                     </div>
                     {/* -----------single product---------- */}
 
-     <div className='flex  items-center justify-around  mt-6'>
+                    <div className='flex  items-center justify-around  mt-6'>
                         <div className="singleProduct flex gap-4 items-center">
                             <div className="productimg w-[50px] h-[50px] bg-praymary rounded-2xl">
                                 {/* image asbe */}
@@ -108,7 +109,7 @@ return (
                     </div>
                     {/* -----------single product---------- */}
 
-     <div className='flex  items-center justify-around  mt-6'>
+                    <div className='flex  items-center justify-around  mt-6'>
                         <div className="singleProduct flex gap-4 items-center">
                             <div className="productimg w-[50px] h-[50px] bg-praymary rounded-2xl">
                                 {/* image asbe */}
@@ -123,7 +124,7 @@ return (
                     </div>
                     {/* -----------single product---------- */}
 
-     <div className='flex  items-center justify-around  mt-6'>
+                    <div className='flex  items-center justify-around  mt-6'>
                         <div className="singleProduct flex gap-4 items-center">
                             <div className="productimg w-[50px] h-[50px] bg-praymary rounded-2xl">
                                 {/* image asbe */}
@@ -136,9 +137,11 @@ return (
 
 
                     </div>
-                    
 
+
+                <Link className='w-full text-center bg-black mt-50 inline-block py-4 text-2xl text-white font-praymary font-semibold'>Check Out</Link>
                 </div>
+
 
             </div>
 
