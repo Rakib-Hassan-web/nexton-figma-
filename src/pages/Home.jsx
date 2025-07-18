@@ -6,6 +6,7 @@ import Expolre from '../components/Expolre'
 import ResExpolre from '../components/ResExpolre'
 import Recomandation from '../components/Recomandation'
 import BestSeller from '../components/BestSeller'
+import AddToCart from '../components/AddToCart'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
     <Expolre/>
     <Recomandation/>
     <BestSeller/>
+    <AddToCart/>
     
 
     </>
