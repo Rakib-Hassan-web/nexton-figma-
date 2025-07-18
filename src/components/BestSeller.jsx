@@ -42,9 +42,8 @@ product.length = 4
 
     <div className="container">
       <h2 className=' w-[881px]font-praymary lg:text-[36px] text-[24px] font-semibold text-second mb-[40px]'>
-        Recommendations.
-        <span className='font-praymary lg:text-[36px] font-semibold text-praymary  '> Best matching products for
-          you</span>
+        Best Sellers.
+        <span className='font-praymary lg:text-[36px] font-semibold text-praymary  '>  Best selling of the month</span>
       </h2>
 
       <Slider {...settings}>
