@@ -19,7 +19,7 @@ return (
 
                 <div className="allProuct  ">
                     {/* -----------single product---------- */}
-                    <div className='flex  items-center justify-around '>
+                    <div className='flex  items-center justify-around  mt-15'>
                         <div className="singleProduct flex gap-4 items-center">
                             <div className="productimg w-[50px] h-[50px] bg-praymary rounded-2xl">
                                 {/* image asbe */}
@@ -138,8 +138,16 @@ return (
 
                     </div>
 
+                    {/* -----------total_price------- */}
+                    <div className="totalPrice flex items-center justify-around mt-23">
+                    <h2 className='product_price text-[23px] text-second font-medium font-praymary'>Total Price :</h2>
+                    <h2 className='product_price text-[20px] text-second font-medium font-praymary'>160$</h2>
 
-                <Link className='w-full text-center bg-black mt-50 inline-block py-4 text-2xl text-white font-praymary font-semibold'>Check Out</Link>
+                    </div>
+                    {/* ------------check out button---------- */}
+                    <Link
+                        className='w-full text-center bg-black mt-[10px] inline-block py-4 text-2xl text-white font-praymary font-semibold'>
+                    Check Out</Link>
                 </div>
 
 
