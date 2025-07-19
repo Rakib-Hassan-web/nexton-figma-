@@ -1,24 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { RxCross1 } from 'react-icons/rx'
 import { Link } from 'react-router'
 
-const AddToCart = () => {
+const AddToCart = ({Crosss}) => {
+  
+
+  
+    const [cart ,setCart]= useState(false)
 return (
 <>
 
 
-    <section>
+    
 
-
-
-        <div className='w-full h-screen bg-[#000000b5]  absolute top-0 left-0'>
-
-            <div className='w-[500px] h-screen bg-white absolute top-0 right-0'>
+         
+<div className='w-[500px] h-screen  bg-white absolute top-0 left-0'  >
 
                      {/* -------------cart Heading------------ */}
                 <div className="Cart_heading flex  items-center mt-10 gap-55">
                     <h2 className='text-[30px] font-semibold font-praymary text-second pl-5'>AddToCart</h2>
-                        <RxCross1 className='text-3xl cursor-pointer' />
+                <div className='cursor-pointer'>{Crosss}</div>
 
                 </div>
                 <div className="allProuct  ">
@@ -160,18 +161,13 @@ return (
 
 
 
-        </div>
 
 
 
 
 
 
-
-
-
-    </section>
-
+    
 
 
 
