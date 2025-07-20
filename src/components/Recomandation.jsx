@@ -13,7 +13,7 @@ var settings = {
 dots: true,
 infinite: true,
 speed: 500,
-slidesToShow: 1,
+slidesToShow: 4,
 slidesToScroll: 1,
 };
 
@@ -32,10 +32,9 @@ axios.get(' https://api.escuelajs.co/api/v1/products')
 } ,[])
 
 
+product.length=1
 
-console.log(product)
 
-product.length = 4
 
 return (
 <>
@@ -96,6 +95,78 @@ return (
           </div>
         </div>
         <div>
+          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
+            {
+            product.slice(0,4).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            ))
+            }
+          </div>
+        </div><div>
+          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
+            {
+            product.slice(0,4).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            ))
+            }
+          </div>
+        </div><div>
+          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
+            {
+            product.slice(0,4).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            ))
+            }
+          </div>
+        </div><div>
+          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
+            {
+            product.slice(0,4).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            ))
+            }
+          </div>
+        </div><div>
+          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
+            {
+            product.slice(0,4).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            ))
+            }
+          </div>
+        </div><div>
+          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
+            {
+            product.slice(0,4).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            ))
+            }
+          </div>
+        </div><div>
+          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
+            {
+            product.slice(0,4).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            ))
+            }
+          </div>
+        </div><div>
+          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
+            {
+            product.slice(0,4).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            ))
+            }
+          </div>
+        </div><div>
+          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
+            {
+            product.slice(0,4).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            ))
+            }
+          </div>
+        </div><div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
             product.slice(0,4).map((item)=>(
