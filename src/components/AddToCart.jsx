@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { RxCross1 } from 'react-icons/rx'
 import { Link } from 'react-router'
 
-const AddToCart = ({closeCart ,cart}) => {
+const AddToCart = ({closeCart , closeDiv}) => {
 
 
 
@@ -14,7 +14,7 @@ return (
 
     <section id='addTOCart'>
 
-<div className='w-full h-screen bg-[#00000046] absolute top-0 left-0 z-12'></div>
+<div  onClick={closeDiv} className='w-full h-screen bg-[#00000046] absolute top-0 left-0 z-12'></div>
 
           <div className='bg-white z-20 pt-28 w-[500px] h-screen absolute top-0 right-0'> 
             {/* -------------cart Heading------------ */}

@@ -66,7 +66,7 @@ return (
 
   <div id='CART' className={`fixed top-0 h-screen w-full left-0 flex justify-end bg-[#0000009b] z-10 duration-[.3s]
         ${cart? 'hidden' : 'visible' }` }>
-        <AddToCart closeCart={<RxCross1 onClick={()=>setCart(!cart)} className='text-3xl'/>}/>
+        <AddToCart closeDiv={()=>setCart(!cart)} closeCart={<RxCross1 onClick={()=>setCart(!cart)} className='text-3xl'/>}/>
     </div>
 
 
