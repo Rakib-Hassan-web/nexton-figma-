@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { RxCross1 } from 'react-icons/rx'
 import { Link } from 'react-router'
 
-const AddToCart = ({closeCart}) => {
+const AddToCart = ({closeCart ,cart}) => {
 
 
 
@@ -14,9 +14,9 @@ return (
 
     <section id='addTOCart'>
 
+<div className='w-full h-screen bg-[#00000046] absolute top-0 left-0 z-12'></div>
 
-
-          <div className='bg-white z-12 pt-28'> 
+          <div className='bg-white z-20 pt-28 w-[500px] h-screen absolute top-0 right-0'> 
             {/* -------------cart Heading------------ */}
             <div className="Cart_heading flex  items-center  justify-around gap-55">
                 <h2 className='text-[30px] font-semibold font-praymary text-second pl-5'>AddToCart</h2>
