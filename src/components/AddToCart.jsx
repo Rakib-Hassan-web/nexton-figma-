@@ -12,10 +12,7 @@ return (
 
 
 
-    <section>
-
-        {/* <div onClick={closeCart} className='w-full h-screen bg-[#00000072] fixed top-0 left-0 z-10'></div> */}
-        {/* <div className='w-[400px] h-screen absolute bg-white ml-auto p-3  top-0 right-[80%] z-20 duration-400'> */}
+    <section id='addTOCart'>
 
 
 

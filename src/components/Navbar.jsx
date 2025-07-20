@@ -19,7 +19,7 @@ const Navbar = () => {
 // AddToCart.style= 'display:block'
 // }
 
-    const [cart ,setCart]= useState(true)
+const [cart ,setCart]= useState(true)
 
 
 return (
@@ -51,19 +51,22 @@ return (
         <button className='user_icon text-2xl text-praymary  mr-[22px]' id='user_icon'>
           <RiUserLine /></button>
 
-  <button onClick={()=>setCart(!cart)} className='relative cursor-pointer'>
-              <RiShoppingCart2Line className='text-[24px] text-Primary'/>
-              <div className='absolute right-[-7px] top-[-7px] bg-[#0EA5E9] h-[20px] w-[20px] flex items-center justify-center rounded-full text-[#fff] text-[12px]'>3</div>
-            </button>
-
-
-
+        <button onClick={()=>setCart(!cart)} className='relative cursor-pointer'>
+          <RiShoppingCart2Line className='text-[24px] text-Primary' />
+          <div
+            className='absolute right-[-7px] top-[-7px] bg-[#0EA5E9] h-[20px] w-[20px] flex items-center justify-center rounded-full text-[#fff] text-[12px]'>
+            3</div>
+        </button>
       </div>
-      {/* ------------Add to cart------ */}
-  <section className={`fixed top-0 left-0 z-20 h-screen w-full bg-[#00000092] flex justify-end items-center duration-[.5s]   ${cart? 'hidden' : 'visible'}` }>
-          <div className=' ' ></div>
-          <AddToCart closeCart={<RxCross1 onClick={()=>setCart(!cart)} className='text-3xl'/>}/>
-        </section>
+
+
+
+      {/* ---------cart----------- */}
+      <section className={`fixed top-0 h-screen w-full left-0 flex justify-end bg-[#00000063] z-20 duration-[.3s]
+        ${cart? 'hidden' : 'visible' }` }>
+
+        <AddToCart closeCart={<RxCross1 onClick={()=>setCart(!cart)} className='text-3xl'/>}/>
+      </section>
 
 
 
