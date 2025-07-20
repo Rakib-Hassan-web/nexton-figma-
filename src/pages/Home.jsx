@@ -8,6 +8,7 @@ import Recomandation from '../components/Recomandation'
 import BestSeller from '../components/BestSeller'
 import AddToCart from '../components/AddToCart'
 import BottomBanner from '../components/BottomBanner'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -17,8 +18,9 @@ const Home = () => {
     <Service/>
     <Expolre/>
     <Recomandation/>
-    <BestSeller/>
+    {/* <BestSeller/> */}
   <BottomBanner/>
+  <Footer/>
     </>
   )
 }

@@ -9,7 +9,7 @@ return (
 <>
 
 
-    <section>
+    <section id='BottomBanner' className='mt-[110px]'>
         <div className="container">
             <div id='bannerbg2'
                 style={{background:`url(${bgextra})` ,backgroundRepeat:'no-repeat' ,backgroundSize:'cover' , backgroundPosition:'left'}}
@@ -21,12 +21,11 @@ return (
                         className='text-second lg:text-[36px] text-[30px] font-semibold font-praymary lg:w-[362px] w-[312px]  lg:mt-[14px]  mb-[24px]'>
                         The All New Fashion
                         Collection Items</h2>
-                        <p className='text-[20px]'>Starting from: $59.99</p>
+                        <p className='text-[20px] text-praymary font-medium font-praymary mb-6'>Starting from: $59.99</p>
 
                     <Link to={'#'}
-                        className='bg-second flex lg:gap-3 gap-2 rounded-full items-center text-white text-[14px] lg:text-[16px] font-medium font-praymary py-[12px] lg:py-[20px] lg:pl-[36px] pl-[24px] w-fit   lg:pr-[50px] pr-[19px] hover:scale-[1.1] duration-[.4s] '>
-                    Explore now
-                    <CiSearch className='lg:text-3xl text-2xl  ' />
+                        className='bg-second flex lg:gap-3 gap-2 rounded-full items-center text-white text-[14px] lg:text-[16px] font-medium font-praymary py-[12px] lg:py-[14px] lg:px-[34px] hover:scale-[1.1] duration-[.4s] w-fit '>
+                     Shop Now
                     </Link>
                 </div>
             </div>
