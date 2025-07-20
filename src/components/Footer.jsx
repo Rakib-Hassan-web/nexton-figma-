@@ -2,7 +2,39 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div><h1>helloe</h1></div>
+    <>
+    
+    
+    
+    
+    
+    <section>
+
+<div className='       border-[#E5E7EB]     mt-[54px] mb-[60px]  border-t-1'></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    </>
   )
 }
 
