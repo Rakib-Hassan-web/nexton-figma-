@@ -17,7 +17,7 @@ const Home = () => {
     <Expolre/>
     <Recomandation/>
     <BestSeller/>
-    <AddToCart/>
+   
     
 
     </>
