@@ -1,7 +1,7 @@
 import React from 'react'
 
 import footerlogo from '../assets/image/logo.png'
-import { FaFacebook } from 'react-icons/fa6'
+import { FaFacebook, FaTelegram } from 'react-icons/fa6'
 import { Link } from 'react-router'
 import { TbBrandYoutubeFilled } from 'react-icons/tb'
 
@@ -41,7 +41,7 @@ return (
                     {/* --------------Telegram------------------ */}
                     <div className=' mt-5 mb-3'>
                         <Link to={'#'} className='  flex items-center gap-2'>
-                        <FaFacebook className='text-[#4676ED] text-3xl ' />
+                        <FaTelegram className='text-[#1c92d2] text-3xl ' />
                         <h2>Telegram</h2>
                         </Link>
                     </div>
