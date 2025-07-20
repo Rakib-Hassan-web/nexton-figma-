@@ -61,10 +61,13 @@ const DetailPage = () => (
         <div className='       border-[#E5E7EB]     mt-[40px]   border-t-1'></div>
 
 
-  <div id='ORDER' className=" mt-8">
+  <div id='catagories' className=" mt-8">
                     <h1 className='font-praymary font-semibold text-second text-[18px] mb-6'>Sort order</h1>
                     <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Most Popular</h2>
-                    
+                    <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Best Rating</h2>
+                    <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Newest</h2>
+                
+                  
 
                 </div>
 
