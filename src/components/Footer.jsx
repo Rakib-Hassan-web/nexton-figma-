@@ -91,18 +91,20 @@ return (
 </div>
 
 {/* -------------Fourth Footer colum------------ */}
-      <div className="SecondCol">
 
-       <h1>Getting started</h1>
+        <div className="FourthCOL">
+
+       <h1 className='font-praymary font-semibold text-second text-base pb-5 text-left' >Community</h1>
        <div className=' flex-col flex  text-left '>
-       <button>Release Notes</button>
-      <button>Upgrade Guide</button>
-      <button>Browser Support</button>
-      <button>Dark Mode</button>
+       <button className='font-praymary font-normal text-praymary text-base pt-5 pb-4 text-left'>Discussion Forums</button>
+      <button className='font-praymary font-normal text-praymary text-base pb-4 text-left'>Code of Conduct</button>
+      <button className='font-praymary font-normal text-praymary text-base pb-4 text-left'>Contributing</button>
+      <button className='font-praymary font-normal text-praymary text-base text-left'>API Reference</button>
 
       </div>
 
 </div>
+
 
 
 
