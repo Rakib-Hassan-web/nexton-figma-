@@ -19,7 +19,7 @@ const Navbar = () => {
 // AddToCart.style= 'display:block'
 // }
 
-    const [cart ,setCart]= useState(false)
+    const [cart ,setCart]= useState(true)
 
 
 return (
@@ -59,14 +59,14 @@ return (
 
 
       </div>
-  <section className={`fixed top-0 z-20 h-full w-full duration-[.3s] right-0 flex justify-end ${cart? 'hidden' : 'visible'}` }>
-          <div onClick={()=>setCart(!cart)} className='fixed top-0 left-0 z-10 h-full w-full  bg-[#00000063]'></div>
-          <div className=' bg-white ' ></div>
+      {/* ------------Add to cart------ */}
+  <section className={`fixed top-0 left-0 z-20 h-screen w-full bg-[#00000092] flex justify-end items-center duration-[.5s]   ${cart? 'hidden' : 'visible'}` }>
+          <div className=' ' ></div>
           <AddToCart closeCart={<RxCross1 onClick={()=>setCart(!cart)} className='text-3xl'/>}/>
         </section>
 
 
-  {/* <AddToCart openCart={()=>setCart(!cart)}/> */}
+
 
 
 
