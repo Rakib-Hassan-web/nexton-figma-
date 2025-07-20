@@ -24,7 +24,7 @@ const [product , setprodect] =useState([])
 
 useEffect(()=>{
 
-axios.get(' https://api.escuelajs.co/api/v1/products')
+axios.get('https://api.escuelajs.co/api/v1/products')
 .then((res)=>{setprodect(res.data)})
 
 .catch((error)=>{
@@ -52,7 +52,7 @@ return (
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,4).map((item)=>(
+            product.slice(0,9).map((item)=>(
             <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug} />
             ))
             }
@@ -61,7 +61,7 @@ return (
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,4).map((item)=>(
+            product.slice(0,9).map((item)=>(
             <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug} />
             ))
             }
@@ -70,7 +70,7 @@ return (
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,4).map((item)=>(
+            product.slice(0,1).map((item)=>(
             <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug} />
             ))
             }
@@ -79,7 +79,7 @@ return (
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,4).map((item)=>(
+            product.slice(0,1).map((item)=>(
             <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug} />
             ))
             }
@@ -88,7 +88,7 @@ return (
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,4).map((item)=>(
+            product.slice(0,1).map((item)=>(
             <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug} />
             ))
             }
@@ -97,7 +97,7 @@ return (
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,4).map((item)=>(
+            product.slice(0,1).map((item)=>(
             <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
             ))
             }
@@ -105,7 +105,7 @@ return (
         </div><div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,4).map((item)=>(
+            product.slice(0,1).map((item)=>(
             <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
             ))
             }
@@ -113,7 +113,7 @@ return (
         </div><div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,4).map((item)=>(
+            product.slice(0,1).map((item)=>(
             <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
             ))
             }
@@ -121,7 +121,7 @@ return (
         </div><div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,4).map((item)=>(
+            product.slice(0,1).map((item)=>(
             <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
             ))
             }
@@ -129,7 +129,7 @@ return (
         </div><div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,4).map((item)=>(
+            product.slice(0,1).map((item)=>(
             <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
             ))
             }
@@ -137,7 +137,7 @@ return (
         </div><div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,4).map((item)=>(
+            product.slice(0,1).map((item)=>(
             <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
             ))
             }
@@ -145,7 +145,7 @@ return (
         </div><div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,4).map((item)=>(
+            product.slice(0,1).map((item)=>(
             <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
             ))
             }
@@ -153,7 +153,7 @@ return (
         </div><div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,4).map((item)=>(
+            product.slice(0,1).map((item)=>(
             <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
             ))
             }

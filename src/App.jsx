@@ -5,6 +5,7 @@ import './App.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router'
 import LayoutOne from './Layout/LayoutOne'
 import Home from './pages/Home'
+import DetailPage from './pages/DetailPage'
 
 
 function App() {
@@ -18,6 +19,7 @@ const myroute = createBrowserRouter(createRoutesFromElements(
 <Route path='/' element={<LayoutOne/>}>
   
   <Route index element={<Home/>}/>
+  <Route path='/DetailPage' element={<DetailPage/>}/>
 </Route>
 
 
