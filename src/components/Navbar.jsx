@@ -19,9 +19,7 @@ const Navbar = () => {
 // AddToCart.style= 'display:block'
 // }
 
-const [value , setValue] = useState(true)
-const [cart , setCart] = useState(true)
-
+    const [cart ,setCart]= useState(false)
 
 
 return (
@@ -29,7 +27,7 @@ return (
 
 
   {/* ------------dark mood ar jonno dark:bg-black---------- */}
-  <nav className='container py-[27px]  hidden lg:block  ' id='navbar'>
+  <nav className='container py-[27px]  hidden lg:block   ' id='navbar'>
 
 
     <div className="nav_row flex justify-between items-center">
@@ -61,12 +59,14 @@ return (
 
 
       </div>
-  {/* <section className={`fixed top-0 z-50 h-full w-full duration-[.3s] right-0 flex justify-end ${cart? 'hidden' : 'visible'}` }>
-          <div onClick={()=>setCart(!cart)} className='fixed top-0 left-0 z-0 h-full w-full  bg-[#00000063]'></div>
-          <AddToCart Crosss={<RxCross1 onClick={()=>setCart(!cart)} className='text-3xl'/>}/>
-        </section> */}
+  <section className={`fixed top-0 z-20 h-full w-full duration-[.3s] right-0 flex justify-end ${cart? 'hidden' : 'visible'}` }>
+          <div onClick={()=>setCart(!cart)} className='fixed top-0 left-0 z-10 h-full w-full  bg-[#00000063]'></div>
+          <div className=' bg-white ' ></div>
+          <AddToCart closeCart={<RxCross1 onClick={()=>setCart(!cart)} className='text-3xl'/>}/>
+        </section>
 
 
+  {/* <AddToCart openCart={()=>setCart(!cart)}/> */}
 
 
 
