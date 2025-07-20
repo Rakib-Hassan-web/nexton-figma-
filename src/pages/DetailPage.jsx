@@ -34,7 +34,7 @@ const DetailPage = () => (
 
                  <div className="minPrice ">
                     <h2>Min price</h2>
-                    <div className="borderMINprice w-[130px] border py-2 flex ju">
+                    <div className="borderMINprice w-[130px] border py-2 flex justify-around items-center">
                         <p>100</p>
                         $
                     </div>
