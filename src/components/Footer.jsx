@@ -76,14 +76,15 @@ return (
 
 
 {/* -------------Third Footer colum------------ */}
-      <div className="SecondCol">
+  
+      <div className="ThirdCOL">
 
-       <h1>Getting started</h1>
+       <h1 className='font-praymary font-semibold text-second text-base pb-5 text-left' >Explore</h1>
        <div className=' flex-col flex  text-left '>
-       <button>Release Notes</button>
-      <button>Upgrade Guide</button>
-      <button>Browser Support</button>
-      <button>Dark Mode</button>
+       <button className='font-praymary font-normal text-praymary text-base pt-5 pb-4 text-left'>Prototyping</button>
+      <button className='font-praymary font-normal text-praymary text-base pb-4 text-left'>Design systems</button>
+      <button className='font-praymary font-normal text-praymary text-base pb-4 text-left'>Pricing</button>
+      <button className='font-praymary font-normal text-praymary text-base text-left'>Security</button>
 
       </div>
 
