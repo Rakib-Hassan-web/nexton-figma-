@@ -15,15 +15,55 @@ const DetailPage = () => (
 
                     <div  className='flex items-center gap-3 mb-4'>
                         <input type='checkbox'  className='w-4 h-4 border-1   border-[#94A3B8] rounded-[4px] outline-none '/>
-                         <h2 className='font-praymary font-normal text-praymary text-[14px] '>Men’s fashion</h2>
+                         <h2 className='font-praymary font-normal text-praymary text-[14px] mt-[2px] '>Men’s fashion</h2>
                     </div>
-                    
-                    <h2 className='font-praymary font-normal text-praymary text-[14px] '>Women’s fashion</h2>
-                    <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Kids & Toys</h2>
-                    <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Accessories</h2>
-                    <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Cosmetics</h2>
-                    <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Shoes</h2>
-                    <h2 className='font-praymary font-normal text-praymary text-[14px] '>Sports</h2>
+
+
+
+                    <div  className='flex items-center gap-3 mb-4'>
+                        <input type='checkbox'  className='w-4 h-4 border-1   border-[#94A3B8] rounded-[4px] outline-none '/>
+                         <h2 className='font-praymary font-normal text-praymary text-[14px] mt-[2px] '>Women’s fashion</h2>
+                    </div>
+
+ 
+                     <div  className='flex items-center gap-3 mb-4'>
+                        <input type='checkbox'  className='w-4 h-4 border-1   border-[#94A3B8] rounded-[4px] outline-none '/>
+                         <h2 className='font-praymary font-normal text-praymary text-[14px] mt-[2px] '>Kids & Toys</h2>
+                    </div>
+
+
+
+
+                   <div  className='flex items-center gap-3 mb-4'>
+                        <input type='checkbox'  className='w-4 h-4 border-1   border-[#94A3B8] rounded-[4px] outline-none '/>
+                         <h2 className='font-praymary font-normal text-praymary text-[14px] mt-[2px] '>Accessories</h2>
+                    </div>
+
+
+
+
+                   <div  className='flex items-center gap-3 mb-4'>
+                        <input type='checkbox'  className='w-4 h-4 border-1   border-[#94A3B8] rounded-[4px] outline-none '/>
+                         <h2 className='font-praymary font-normal text-praymary text-[14px] mt-[2px] '>Cosmetics</h2>
+                    </div>
+
+
+                    <div  className='flex items-center gap-3 mb-4'>
+                        <input type='checkbox'  className='w-4 h-4 border-1   border-[#94A3B8] rounded-[4px] outline-none '/>
+                         <h2 className='font-praymary font-normal text-praymary text-[14px] mt-[2px] '>Shoes</h2>
+                    </div>
+
+
+
+                     <div  className='flex items-center gap-3 mb-4'>
+                        <input type='checkbox'  className='w-4 h-4 border-1   border-[#94A3B8] rounded-[4px] outline-none '/>
+                         <h2  className='font-praymary font-normal text-praymary text-[14px] mt-[2px] '>Sports</h2>
+                    </div>
+
+
+
+
+                   
 
                 </div>
 
