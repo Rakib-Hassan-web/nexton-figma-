@@ -52,8 +52,20 @@ return (
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,9).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug} />
+            product.slice(0,3).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
+            ))
+            }
+          </div>
+        </div>
+       
+
+
+       <div>
+          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
+            {
+            product.slice(0,3).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
             ))
             }
           </div>
@@ -61,8 +73,8 @@ return (
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,9).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug} />
+            product.slice(0,3).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
             ))
             }
           </div>
@@ -70,8 +82,8 @@ return (
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,1).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug} />
+            product.slice(0,3).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
             ))
             }
           </div>
@@ -79,8 +91,8 @@ return (
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,1).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug} />
+            product.slice(0,3).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
             ))
             }
           </div>
@@ -88,8 +100,8 @@ return (
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,1).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug} />
+            product.slice(0,3).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
             ))
             }
           </div>
@@ -97,80 +109,44 @@ return (
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,1).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            product.slice(0,3).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
             ))
             }
           </div>
-        </div><div>
+        </div>
+        <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,1).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            product.slice(0,3).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
             ))
             }
           </div>
-        </div><div>
+        </div>
+        <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,1).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            product.slice(0,3).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
             ))
             }
           </div>
-        </div><div>
+        </div>
+        <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,1).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            product.slice(0,3).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
             ))
             }
           </div>
-        </div><div>
+        </div>
+        <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,1).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
-            ))
-            }
-          </div>
-        </div><div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,1).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
-            ))
-            }
-          </div>
-        </div><div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,1).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
-            ))
-            }
-          </div>
-        </div><div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,1).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
-            ))
-            }
-          </div>
-        </div><div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,4).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
-            ))
-            }
-          </div>
-        </div><div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,4).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            product.slice(0,3).map((item)=>(
+            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
             ))
             }
           </div>

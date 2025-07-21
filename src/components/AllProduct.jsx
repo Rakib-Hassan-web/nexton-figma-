@@ -1,42 +1,41 @@
 import React, { useEffect, useState } from 'react'
 import Singleres from './comon/Singleres'
 import axios from 'axios'
+import Pagination from './Pagination';
 
 const AllProduct = () => {
 
-    const [product , setprodect] =useState([])
+     const [products, setProducts] = useState([]);
+  const [page, setPage] = useState(1);
+  const itemsPerPage = 4;
 
-useEffect(()=>{
+  useEffect(() => {
+    axios
+      .get("https://api.escuelajs.co/api/v1/products")
+      .then((res) => {
+        setProducts(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
-axios.get('https://api.escuelajs.co/api/v1/products')
-.then((res)=>{setprodect(res.data)})
-
-.catch((error)=>{
-})
-} ,[])
+  const start = (page - 1) * itemsPerPage;
+  const currentItems = products.slice(start, start + itemsPerPage);
+  const totalPages = Math.ceil(products.length / itemsPerPage);
   return (
     <>
     
      <div className=' lg:flex mt-4 lg:flex-wrap justify-between items-center '>
             {
-            product.slice(0,12).map((item)=>(
-            <Singleres  pimage={item.category.image} pname={item.title} pprice={item.price} pacce={item.slug}  />
+            currentItems.slice(0,10).map((item)=>(
+            <Singleres  pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}  />
             ))
-            }
+        }
+        <Pagination totalPages={totalPages} currentPage={page} setPage={setPage} />
           </div>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     
     </>
