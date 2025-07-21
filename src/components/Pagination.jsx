@@ -38,7 +38,7 @@ const Pagination = ({ totalPages, currentPage, setPage }) => {
           style={{
             margin: "0 3px",
             padding: "6px 12px",
-            background: currentPage === num ? "#FFA62F" : "#fff",
+            background: currentPage === num ? "#4B5563" : "#fff",
             color: currentPage === num ? "#fff" : "#000",
             border: "1px solid #ccc",
             cursor: "pointer",
