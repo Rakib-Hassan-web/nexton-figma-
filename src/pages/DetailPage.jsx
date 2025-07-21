@@ -10,7 +10,7 @@ const DetailPage = () => (
         <div className='       border-[#E5E7EB]     mt-[4px] mb-[40px]  border-t-1'></div>
         <div className="container">
 
-            <div className="DetailPageALLside flex gap-[44px]">
+            <div className="DetailPageALLside flex gap-[54px]">
             {/* ------------left side menu---------- */}
             <div className="LeftSide w-[285px] h-screen">
 

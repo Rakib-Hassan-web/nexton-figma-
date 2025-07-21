@@ -29,7 +29,7 @@ const AllProduct = () => {
      <div className=' lg:flex mt-4 lg:flex-wrap justify-between items-center '>
             {
             currentItems.slice(0,10).map((item)=>(
-            <Singleres  pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}  />
+            <Singleres className={'overflow-ellipsis'}  pimage={item.category.image} pname={item.category.slug} pprice={item.price}  pacce={item.title }  />
             ))
         }
         <Pagination totalPages={totalPages} currentPage={page} setPage={setPage} />
