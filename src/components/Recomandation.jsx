@@ -155,7 +155,7 @@ return (
 
 
       <div className='  mt-15'>
-        <Link
+        <Link to={'/DetailPage'}
           className=' m-auto text-center  py-4 px-10 bg-black text-base text-white font-praymary font-medium flex justify-center items-center w-fit rounded-[20px] '>
         See All</Link>
       </div>

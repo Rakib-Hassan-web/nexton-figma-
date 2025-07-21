@@ -42,7 +42,10 @@ const Pagination = ({ totalPages, currentPage, setPage }) => {
             color: currentPage === num ? "#fff" : "#000",
             border: "1px solid #ccc",
             cursor: "pointer",
+            
+            
           }}
+          className=" rounded-xl"
         >
           {num}
         </button>
