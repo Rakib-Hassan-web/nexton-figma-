@@ -77,7 +77,7 @@ const DetailPage = () => (
 
                     <h1 className='font-praymary font-semibold text-second text-[18px] mb-6'>Price range</h1>
 
-                    <div className='line'>--------------------</div>
+                     <input type="range" />
 
                     <div className="Prices flex items-center justify-between">
 
