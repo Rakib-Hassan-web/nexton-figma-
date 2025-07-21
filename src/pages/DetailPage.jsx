@@ -1,4 +1,6 @@
 import React from 'react'
+import AllProduct from '../components/AllProduct'
+import Footer from '../components/Footer'
 
 const DetailPage = () => (
 <>
@@ -7,6 +9,8 @@ const DetailPage = () => (
 
         <div className='       border-[#E5E7EB]     mt-[4px] mb-[40px]  border-t-1'></div>
         <div className="container">
+
+            <div className="DetailPageALLside flex gap-[44px]">
             {/* ------------left side menu---------- */}
             <div className="LeftSide w-[285px] h-screen">
 
@@ -103,17 +107,41 @@ const DetailPage = () => (
 
                 </div>
 
-        <div className='       border-[#E5E7EB]     mt-[40px]   border-t-1'></div>
+                 <div className='       border-[#E5E7EB]     mt-[40px]   border-t-1'></div>
 
 
-  <div id='Order' className=" mt-8">
+                  <div id='Order' className=" mt-8">
                     <h1 className='font-praymary font-semibold text-second text-[18px] mb-6'>Sort order</h1>
-                    <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Most Popular</h2>
-                    <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Best Rating</h2>
-                    <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Newest</h2>
-                    <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Price Low - Hight</h2>
-                    <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Price Hight - Low</h2>
-                  
+
+
+                   <div  className='flex items-center gap-3 mb-4'>
+                        <input type='radio'  className='w-[20px] h-[20px] border-1 !rounded-full border-[#94A3B8] '/>
+                         <h2 className='font-praymary font-normal text-praymary text-[14px] mt-[2px] '>Most Popular</h2>
+                    </div>
+
+
+
+ <div  className='flex items-center gap-3 mb-4'>
+                        <input type='radio'  className='w-[20px] h-[20px] border-1 !rounded-full border-[#94A3B8] '/>
+                         <h2 className='font-praymary font-normal text-praymary text-[14px] mt-[2px] '>Best Rating</h2>
+                    </div>
+
+
+
+ <div  className='flex items-center gap-3 mb-4'>
+                        <input type='radio'  className='w-[20px] h-[20px] border-1 !rounded-full border-[#94A3B8] '/>
+                         <h2 className='font-praymary font-normal text-praymary text-[14px] mt-[2px] '>Newest</h2>
+                    </div>
+ <div  className='flex items-center gap-3 mb-4'>
+                        <input type='radio'  className='w-[20px] h-[20px] border-1 !rounded-full border-[#94A3B8] '/>
+                         <h2 className='font-praymary font-normal text-praymary text-[14px] mt-[2px] '>Price Low - Hight</h2>
+                    </div>
+ <div  className='flex items-center gap-3 mb-4'>
+                        <input type='radio'  className='w-[20px] h-[20px] border-1 !rounded-full border-[#94A3B8] '/>
+                         <h2 className='font-praymary font-normal text-praymary text-[14px] mt-[2px] '>Price Hight - Low</h2>
+                    </div>
+
+        
 
                 </div>
 
@@ -124,9 +152,15 @@ const DetailPage = () => (
             </div>
 
 
+{/* -----------rightside-------------- */}
+
+<AllProduct/>
 
 
 
+</div>
+{/* ----------footer----- */}
+<Footer/>
         </div>
     </section>
 
