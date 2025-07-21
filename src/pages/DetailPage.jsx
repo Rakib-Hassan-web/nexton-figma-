@@ -12,8 +12,13 @@ const DetailPage = () => (
 
                 <div id='catagories' className=" mt-10">
                     <h1 className='font-praymary font-semibold text-second text-[18px] mb-6'>Categories</h1>
-                    <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Men’s fashion</h2>
-                    <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Women’s fashion</h2>
+
+                    <div  className='flex items-center gap-3 mb-4'>
+                        <input type='checkbox'  className='w-4 h-4 border-1   border-[#94A3B8] rounded-[4px] outline-none '/>
+                         <h2 className='font-praymary font-normal text-praymary text-[14px] '>Men’s fashion</h2>
+                    </div>
+                    
+                    <h2 className='font-praymary font-normal text-praymary text-[14px] '>Women’s fashion</h2>
                     <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Kids & Toys</h2>
                     <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Accessories</h2>
                     <h2 className='font-praymary font-normal text-praymary text-[14px] mb-4'>Cosmetics</h2>
