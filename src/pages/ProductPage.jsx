@@ -5,6 +5,7 @@ import slidingimg3 from '../assets/image/product-27-3 1.png'
 import slidingimg4 from '../assets/image/product-27-4 1.png'
 import Mainimg from '../assets/image/image-showing.png'
 import { HiMiniStar } from 'react-icons/hi2'
+import { HiOutlineShoppingBag } from 'react-icons/hi'
 
 const ProductPage = () => {
 
@@ -53,7 +54,7 @@ const ProductPage = () => {
 
                </div>
  
-         <div className="SEcondRow">
+                <div className="SEcondRow mb-8">
             <h2 className='text-base text-second font-praymary font-semibold'>Size: 
                 <span className='text-base text-second font-praymary font-semibold'> S</span>
             </h2>
@@ -72,7 +73,27 @@ const ProductPage = () => {
 
 
             </div> 
-         </div>
+                </div>
+
+                <div className="thirdRow">
+                    
+                 <div className="quentityBg w-[110px] bg-[#F8F8F8] rounded-full py-2 px-3 flex justify-between items-center ">
+                    <span className='bg-[#fff] w-[24px] h-[24px] rounded-full border border-[#E5E7EB] text-3xl flex justify-center items-center text-praymary  cursor-pointer ' ><p className='mb-2'>-</p></span>
+                    <h2 className='text-base text-praymary font-praymary font-medium'>1</h2>
+                  <span className='bg-[#fff] w-[24px] h-[24px] rounded-full border border-[#E5E7EB] text-2xl  flex justify-center items-center text-praymary  cursor-pointer font-praymary ' >+</span>
+                 </div>
+  
+
+                 <div className="curtButton">
+                    <HiOutlineShoppingBag />
+                    <h2>Add to cart</h2>
+
+                 </div>
+                
+          
+                </div>
+
+
 
               
            </div>
