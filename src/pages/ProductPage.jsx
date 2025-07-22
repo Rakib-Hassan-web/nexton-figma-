@@ -4,6 +4,7 @@ import slidingimg2 from '../assets/image/product-27-2 1.png'
 import slidingimg3 from '../assets/image/product-27-3 1.png'
 import slidingimg4 from '../assets/image/product-27-4 1.png'
 import Mainimg from '../assets/image/image-showing.png'
+import { HiMiniStar } from 'react-icons/hi2'
 
 const ProductPage = () => {
   return (
@@ -33,7 +34,14 @@ const ProductPage = () => {
 
            <div className="InfoBorder w-[460px] h-[463px] border-[#E5E7EB] border-1 p-[33px] rounded-[16px]">
                
-               
+               <div className='firstRow '>
+                <div className='flex gap-1'>
+                <HiMiniStar className='text-[#FBBF24] text-xl'  />
+                <p className='text-base text-praymary font-praymary font-semibold'>4.9 · </p>
+
+         <p className=' underline text-base text-praymary font-praymary font-medium'>142 reviews</p>
+                      </div>
+               </div>
 
 
               
