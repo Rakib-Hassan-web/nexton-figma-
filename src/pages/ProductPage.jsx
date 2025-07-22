@@ -31,7 +31,13 @@ const ProductPage = () => {
                     <img className='w-full' src={Mainimg}  alt="mainIMG" />
                 </div>
 
-           
+           <div className="InfoBorder w-[460px] h-[463px] border-[#E5E7EB] border-1 p-[33px] rounded-[16px]">
+               
+               
+
+
+              
+           </div>
 
 
 
