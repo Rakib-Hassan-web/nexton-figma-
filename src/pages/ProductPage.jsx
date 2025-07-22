@@ -1,8 +1,68 @@
 import React from 'react'
+import slidingimg1 from '../assets/image/product-27-1 (4) 1 (1).png'
+import slidingimg2 from '../assets/image/product-27-2 1.png'
+import slidingimg3 from '../assets/image/product-27-3 1.png'
+import slidingimg4 from '../assets/image/product-27-4 1.png'
 
 const ProductPage = () => {
   return (
-    <div>ProductPage</div>
+    <>
+    
+
+    <section id='productPage'>
+
+     <div className="container">
+          <div className="main">
+
+        <div className="sliding_img flex flex-col gap-4 w-[140px]">
+            
+           <img className='img1' src={slidingimg1} alt="slidingimg" />
+           <img className='img2' src={slidingimg2} alt="slidingimg" />
+  
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+       
+     </div>
+    
+
+
+
+
+
+
+
+
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </>
   )
 }
 
