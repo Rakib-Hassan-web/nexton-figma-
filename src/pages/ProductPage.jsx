@@ -3,6 +3,7 @@ import slidingimg1 from '../assets/image/product-27-1 (4) 1 (1).png'
 import slidingimg2 from '../assets/image/product-27-2 1.png'
 import slidingimg3 from '../assets/image/product-27-3 1.png'
 import slidingimg4 from '../assets/image/product-27-4 1.png'
+import Mainimg from '../assets/image/image-showing.png'
 
 const ProductPage = () => {
   return (
@@ -13,9 +14,9 @@ const ProductPage = () => {
                 <div className='       border-[#E5E7EB]     mb-[40px]  border-t-1'></div>
 
      <div className="container">
-          <div className="main">
+          <div className="main flex gap-8">
 
-        <div className="sliding_img flex flex-col gap-4 w-[140px]">
+                     <div className="sliding_img flex flex-col gap-4 w-[140px]">
             
            <img className='img1' src={slidingimg1} alt="slidingimg" />
            <img className='img2' src={slidingimg2} alt="slidingimg" />
@@ -23,12 +24,14 @@ const ProductPage = () => {
            <img className='img4' src={slidingimg4} alt="slidingimg" />
 
 
-        </div>
+                        </div>
 
 
+                <div className="mainIMG w-[640px]">
+                    <img className='w-full' src={Mainimg}  alt="mainIMG" />
+                </div>
 
-
-
+           
 
 
 
