@@ -34,7 +34,7 @@ const ProductPage = () => {
 
            <div className="InfoBorder w-[460px] h-[463px] border-[#E5E7EB] border-1 p-[33px] rounded-[16px]">
                
-               <div className='firstRow flex  justify-between '>
+               <div className='firstRow flex  justify-between mb-8 '>
                       
                        <div className='flex gap-1'>
                 <HiMiniStar className='text-[#FBBF24] text-xl'  />
@@ -49,7 +49,24 @@ const ProductPage = () => {
 
 
                </div>
+ 
+         <div className="SEcondRow">
+            <h2 className='text-base text-second font-praymary font-semibold'>Size: 
+                <span className='text-base text-second font-praymary font-semibold'> S</span>
+            </h2>
+            <div className="Sizes flex gap-2 mt-3">
 
+           <div className="SmallSize  border border-[#E5E7EB] py-[10px] px-[30px] w-fit rounded-[12px]  cursor-pointer"><h2 className='text-base text-praymary font-praymary font-semibold'>S</h2></div>
+           <div className="SmallSize border border-[#E5E7EB] py-[10px] px-[30px] w-fit rounded-[12px]  cursor-pointer"><h2 className='text-base text-praymary font-praymary font-semibold'>M</h2></div>
+           <div className="SmallSize border border-[#E5E7EB] py-[10px] px-[30px] w-fit rounded-[12px]  cursor-pointer"><h2 className='text-base text-praymary font-praymary font-semibold'>L</h2></div>
+           <div className="SmallSize border border-[#E5E7EB] py-[10px] px-[28px] w-fit rounded-[12px]  cursor-pointer"><h2 className='text-base text-praymary font-praymary font-semibold'>XL</h2></div>
+           <div className="SmallSize border border-[#E5E7EB] py-[10px] px-[27px] w-fit rounded-[12px]  cursor-pointer"><h2 className='text-base text-praymary font-praymary font-semibold'>2XL</h2></div>
+
+
+
+
+            </div> 
+         </div>
 
               
            </div>
