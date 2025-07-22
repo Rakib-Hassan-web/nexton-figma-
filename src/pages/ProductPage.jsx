@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import slidingimg1 from '../assets/image/product-27-1 (4) 1 (1).png'
 import slidingimg2 from '../assets/image/product-27-2 1.png'
 import slidingimg3 from '../assets/image/product-27-3 1.png'
@@ -7,6 +7,9 @@ import Mainimg from '../assets/image/image-showing.png'
 import { HiMiniStar } from 'react-icons/hi2'
 
 const ProductPage = () => {
+
+
+    const [color ,setcolor]=useState(true)
   return (
     <>
     
@@ -55,12 +58,15 @@ const ProductPage = () => {
                 <span className='text-base text-second font-praymary font-semibold'> S</span>
             </h2>
             <div className="Sizes flex gap-2 mt-3">
-
-           <div className="SmallSize  border border-[#E5E7EB] py-[10px] px-[30px] w-fit rounded-[12px]  cursor-pointer"><h2 className='text-base text-praymary font-praymary font-semibold'>S</h2></div>
-           <div className="SmallSize border border-[#E5E7EB] py-[10px] px-[30px] w-fit rounded-[12px]  cursor-pointer"><h2 className='text-base text-praymary font-praymary font-semibold'>M</h2></div>
-           <div className="SmallSize border border-[#E5E7EB] py-[10px] px-[30px] w-fit rounded-[12px]  cursor-pointer"><h2 className='text-base text-praymary font-praymary font-semibold'>L</h2></div>
-           <div className="SmallSize border border-[#E5E7EB] py-[10px] px-[28px] w-fit rounded-[12px]  cursor-pointer"><h2 className='text-base text-praymary font-praymary font-semibold'>XL</h2></div>
-           <div className="SmallSize border border-[#E5E7EB] py-[10px] px-[27px] w-fit rounded-[12px]  cursor-pointer"><h2 className='text-base text-praymary font-praymary font-semibold'>2XL</h2></div>
+                 {/* {
+                    color? '#0EA5E9' :'#fff'
+                     onClick={()=>setcolor(!color)}
+                 } */}
+           <div className="SmallSize  border border-[#E5E7EB] py-[10px] px-[30px] w-fit rounded-[12px]  cursor-pointer hover:bg-[#0EA5E9]   duration-[.4s] text-base text-praymary font-praymary font-semibold     hover:text-white "><h2 >S</h2></div>
+           <div className="SmallSize border border-[#E5E7EB] py-[10px] px-[30px] w-fit rounded-[12px]  cursor-pointer hover:bg-[#0EA5E9]   duration-[.4s] text-base text-praymary font-praymary font-semibold     hover:text-white "><h2 >M</h2></div>
+           <div className="SmallSize border border-[#E5E7EB] py-[10px] px-[30px] w-fit rounded-[12px]  cursor-pointer hover:bg-[#0EA5E9]   duration-[.4s] text-base text-praymary font-praymary font-semibold     hover:text-white "><h2 >L</h2></div>
+           <div className="SmallSize border border-[#E5E7EB] py-[10px] px-[28px] w-fit rounded-[12px]  cursor-pointer hover:bg-[#0EA5E9]   duration-[.4s] text-base text-praymary font-praymary font-semibold     hover:text-white "><h2 >XL</h2></div>
+           <div className="SmallSize border border-[#E5E7EB] py-[10px] px-[27px] w-fit rounded-[12px]  cursor-pointer hover:bg-[#0EA5E9]   duration-[.4s] text-base text-praymary font-praymary font-semibold     hover:text-white "><h2 >2XL</h2></div>
 
 
 
