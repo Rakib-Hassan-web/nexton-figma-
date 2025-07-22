@@ -18,7 +18,8 @@ const ProductPage = () => {
             
            <img className='img1' src={slidingimg1} alt="slidingimg" />
            <img className='img2' src={slidingimg2} alt="slidingimg" />
-  
+           <img className='img3' src={slidingimg3} alt="slidingimg" />
+           <img className='img4' src={slidingimg4} alt="slidingimg" />
 
 
         </div>
