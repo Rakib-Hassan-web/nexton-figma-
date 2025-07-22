@@ -19,7 +19,7 @@ const Singleres = ({ pname , pprice , pimage ,prating , pacce , pdiscount }) => 
         <img src={pimage} alt="product image" />
     </div>
 
-
+<h2>hi</h2>
     <div className="recoAllTxt">
 
 
@@ -33,12 +33,8 @@ const Singleres = ({ pname , pprice , pimage ,prating , pacce , pdiscount }) => 
     <p className='text-[14px] font-normal font-praymary text-praymary cursor-pointer'>{pacce}</p>
     <p className='text-[14px] font-normal font-praymary text-praymary line-through'>{pdiscount}</p>
 </div>
-{/* 
-<div className="rating flex gap-1 items-center mt-[15px]">
-    <HiStar className='text-[#FBBF24] text-2xl' />
-    <p className='text-[14px] font-normal font-praymary text-praymary'>{prating}</p>
 
-</div> */}
+
 
 
     </div>

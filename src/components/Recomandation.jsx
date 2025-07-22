@@ -158,7 +158,7 @@ return (
         <Link to={'/DetailPage'}
           className=' m-auto text-center  py-4 px-10 bg-black text-base text-white font-praymary font-medium flex justify-center items-center w-fit rounded-[20px] '>
         See All</Link>
-        <h2>hi</h2>
+     
       </div>
     </div>
 

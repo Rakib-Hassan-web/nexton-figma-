@@ -7,6 +7,7 @@ import Mainimg from '../assets/image/image-showing.png'
 import { HiMiniStar } from 'react-icons/hi2'
 import { HiOutlineShoppingBag } from 'react-icons/hi'
 import { Link } from 'react-router'
+import { BsStars } from 'react-icons/bs'
 
 const ProductPage = () => {
 
@@ -152,13 +153,37 @@ return (
 
         <div className='   w-[804px]     border-[#E5E7EB]     my-[54px]  border-t-1'></div>
 
-            <div className="infotext">
+            <div className="infotext1">
                 <h2 className='text-[36px] text-second font-semibold font-praymary mb-1'>Black Automatic Watch</h2>
-                <p className='w-[735px]'>The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had
+                <p className='w-[735px] text-base text-praymary font-praymary font-normal'>The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had
                     previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic
                     wooden canoes in Valley Park, Missouri ceased in 1978.</p>
             </div>
 
+            <div className="fabric mt-[60px]">
+                  <h2 className='text-[24px] text-second font-semibold font-praymary mb-1'>Fabric + Care</h2>
+                <p className='w-[735px] text-base text-praymary font-praymary font-normal'>Material: Soft wool blend</p>
+                <p className='w-[735px] text-base text-praymary font-praymary font-normal'>Color: Various</p>
+            </div>
+
+
+        <div className="sale mt-[60px]">
+                       <h2 className='text-[24px] text-second font-semibold font-praymary mb-1'>Sale performance</h2>
+                <p className='w-[735px] text-base text-praymary font-praymary font-normal'>Sales: 0</p>
+                <p className='w-[735px] text-base text-praymary font-praymary font-normal'>Review Count: - </p>
+                <p className='w-[735px] text-base text-praymary font-praymary font-normal'>Review Average: -</p>
+        </div>
+
+
+ <div className='mb-50'>
+                  <h2 className='text-[36px] text-second font-semibold mt-[60px] mb-2'>Keywords</h2>
+                  <div className='flex items-center gap-2'>
+                    <Link to={'/'} className='text-[12px] font-normal text-praymary flex items-center gap-1 py-2 px-[14px] border-1 border-[#E5E7EB] w-fit rounded-full'><BsStars  className='text-lg'/>men's fashion</Link>
+                    <Link to={'/'} className='text-[12px] font-normal text-praymary flex items-center gap-1 py-2 px-[14px] border-1 border-[#E5E7EB] w-fit rounded-full'><BsStars  className='text-lg'/>winter hat</Link>
+                    <Link to={'/'} className='text-[12px] font-normal text-praymary flex items-center gap-1 py-2 px-[14px] border-1 border-[#E5E7EB] w-fit rounded-full'><BsStars className='text-lg' />colorful accessory</Link>
+                    <Link to={'/'} className='text-[12px] font-normal text-praymary flex items-center gap-1 py-2 px-[14px] border-1 border-[#E5E7EB] w-fit rounded-full'><BsStars  className='text-lg'/>warm headwear</Link>
+                  </div>
+                </div>
         </div>
 
 
