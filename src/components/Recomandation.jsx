@@ -4,7 +4,7 @@ import Singleres from './comon/Singleres'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 
 
 const Recomandation = () => {
@@ -34,7 +34,11 @@ axios.get('https://api.escuelajs.co/api/v1/products')
 
 product.length=1
 
+const navigate = useNavigate()
 
+let handelShow =()=>{
+  navigate('/Product')
+}
 
 return (
 <>
@@ -52,20 +56,20 @@ return (
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
-            product.slice(0,3).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
+            product.map((item)=>(
+            <Singleres Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
             ))
             }
           </div>
         </div>
        
-
+{/* 
 
        <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
             product.slice(0,3).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
+            <Singleres Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
             ))
             }
           </div>
@@ -150,7 +154,7 @@ return (
             ))
             }
           </div>
-        </div>
+        </div> */}
       </Slider>
 
 
