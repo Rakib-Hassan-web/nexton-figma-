@@ -10,6 +10,7 @@ const ProductPage = () => {
     
 
     <section id='productPage'>
+                <div className='       border-[#E5E7EB]     mb-[40px]  border-t-1'></div>
 
      <div className="container">
           <div className="main">
