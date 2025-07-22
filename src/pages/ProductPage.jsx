@@ -6,6 +6,7 @@ import slidingimg4 from '../assets/image/product-27-4 1.png'
 import Mainimg from '../assets/image/image-showing.png'
 import { HiMiniStar } from 'react-icons/hi2'
 import { HiOutlineShoppingBag } from 'react-icons/hi'
+import { Link } from 'react-router'
 
 const ProductPage = () => {
 
@@ -75,7 +76,7 @@ const ProductPage = () => {
             </div> 
                 </div>
 
-                <div className="thirdRow">
+                <div className="thirdRo flex items-center justify-between">
                     
                  <div className="quentityBg w-[110px] bg-[#F8F8F8] rounded-full py-2 px-3 flex justify-between items-center ">
                     <span className='bg-[#fff] w-[24px] h-[24px] rounded-full border border-[#E5E7EB] text-3xl flex justify-center items-center text-praymary  cursor-pointer ' ><p className='mb-2'>-</p></span>
@@ -84,17 +85,30 @@ const ProductPage = () => {
                  </div>
   
 
-                 <div className="curtButton">
-                    <HiOutlineShoppingBag />
-                    <h2>Add to cart</h2>
+                 <Link className="curtButton bg-second rounded-full w-fit py-4 px-8 flex  items-center gap-2 shadow-[0px_10px_20px_0px_rgba(0,_0,_0,_0.15)] hover:scale-[1.2] duration-[.4s] hover:shadow-[0px_0px_40px_0px_rgba(138,_43,_226,_0.4)]">
+                    <HiOutlineShoppingBag className='text-white font-semibold text-xl' />
+                    <h2 className='text-base font-medium font-praymary text-white'>Add to cart</h2>
 
-                 </div>
+                 </Link>
                 
           
                 </div>
 
 
+                  <div className="FourthRow mt-8">
+                    
+                    <div className='1st flex items-center justify-between'>
+                        <h2 className='text-base font-normal font-praymary text-praymary'>$169.99 x 1</h2>
+                        <h2 className='text-base font-normal font-praymary text-praymary'>$169.99</h2>
+                    </div>
 
+                      <div className='2nd mt-[10px] flex items-center justify-between'>
+                        <h2 className='text-base font-normal font-praymary text-praymary'>Tax estimate</h2>
+                        <h2 className='text-base font-normal font-praymary text-praymary'>$0</h2>
+                    </div>
+                    
+                    
+                     </div>
               
            </div>
 
