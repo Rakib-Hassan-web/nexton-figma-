@@ -160,7 +160,7 @@ const DetailPage = () => (
 
 </div>
 {/* ----------footer----- */}
-<Footer/>
+
         </div>
     </section>
 

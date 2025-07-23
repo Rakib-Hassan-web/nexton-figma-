@@ -20,7 +20,7 @@ const Home = () => {
     <Recomandation/>
     {/* <BestSeller/> */}
   <BottomBanner/>
-  <Footer/>
+
     </>
   )
 }

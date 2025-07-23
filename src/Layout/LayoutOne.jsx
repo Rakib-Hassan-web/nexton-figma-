@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import ResNavbar from '../components/ResNavbar'
 import Banner from '../components/Banner'
 import ResExpolre from '../components/ResExpolre'
+import Footer from '../components/Footer'
 
 const LayoutOne = () => {
 return (
@@ -18,6 +19,7 @@ return (
 
     <Outlet />
     <ResExpolre/>
+    <Footer/>
 </>
 )
 }
