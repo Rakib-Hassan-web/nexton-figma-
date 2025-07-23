@@ -44,7 +44,24 @@ return (
         </div>
 
 
-       
+        <div>
+            <div className="InfoBorder w-[460px] h-[463px] border-[#E5E7EB] border-1 p-[33px] rounded-[16px]">
+
+                <div className='firstRow flex  justify-between mb-8 '>
+
+                    <div className='flex gap-1'>
+                        <HiMiniStar className='text-[#FBBF24] text-xl' />
+                        <p className='text-base text-praymary font-praymary font-semibold'>4.9 · </p>
+                        <p className=' underline text-base text-praymary font-praymary font-medium'>142 reviews</p>
+                    </div>
+
+                    <div>
+                        <h2 className=' font-praymary font-semibold text-[24px] text-second'>$169.99</h2>
+                        <h3 className=' font-praymary font-medium text-[14px] text-praymary line-through'>$199.99
+                        </h3>
+                    </div>
+
+
                 </div>
 
                 <div className="SEcondRow mb-8">
