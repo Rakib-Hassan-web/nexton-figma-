@@ -9,19 +9,20 @@ import { Link, useNavigate } from 'react-router';
 
 const Recomandation = () => {
 
-  var settings = {
-    dots: true,
-    infinite: false,
+      const settings = {
+    infinite: true,
+    slidesToShow: 3,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    initialSlide: 0,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
           dots: true
         }
@@ -40,10 +41,17 @@ const Recomandation = () => {
           slidesToShow: 1,
           slidesToScroll: 1
         }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        }
       }
     ]
   };
-
 
 
 const [product , setprodect] =useState([])
@@ -89,8 +97,73 @@ return (
           </div>
         </div> */}
 
+ <div className="slider-container">
+                <Slider {...settings}>
+                    {
+                      product.map((item)=>(
+                        <Singleres HandleCart={()=>HandleCart(item)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
+                    }  {
+                      product.map((item)=>(
+                        <Singleres HandleCart={()=>HandleCart(item)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
+                    }  {
+                      product.map((item)=>(
+                        <Singleres HandleCart={()=>HandleCart(item)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
+                    }  {
+                      product.map((item)=>(
+                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
+                    }  {
+                      product.map((item)=>(
+                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
+                    }  {
+                      product.map((item)=>(
+                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
+                    }  {
+                      product.map((item)=>(
+                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
+                    }  {
+                      product.map((item)=>(
+                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
+                    }  {
+                      product.map((item)=>(
+                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
+                    }  {
+                      product.map((item)=>(
+                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
+                    }  {
+                      product.map((item)=>(
+                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
+                    }  {
+                      product.map((item)=>(
+                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
+                    }  {
+                      product.map((item)=>(
+                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
+                    }
+                </Slider>
+            </div>
 
 
+
+
+
+
+
+
+
+{/* 
         <Slider {...settings}>
                      
 
@@ -132,7 +205,7 @@ return (
 
 
                           
-              </Slider>
+              </Slider> */}
        
 {/* 
 

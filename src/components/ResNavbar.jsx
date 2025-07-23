@@ -14,7 +14,7 @@ const ResNavbar = () => {
 
 const [crossNav,setcrossNav]=useState(false)
 
-console.log(crossNav)
+
 
 return (
 <>

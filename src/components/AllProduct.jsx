@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 import Singleres from './comon/Singleres'
 import axios from 'axios'
 import Pagination from './Pagination';
+import { useNavigate } from 'react-router';
 
-const AllProduct = () => {
+const AllProduct = ({Showdetails}) => {
 
 const [products, setProducts] = useState([]);
 const [page, setPage] = useState(1);
@@ -20,6 +21,14 @@ console.log(err);
 });
 }, []);
 
+
+const navigate = useNavigate()
+
+let handelShow =()=>{
+  navigate('/Product')
+}
+
+
 const start = (page - 1) * itemsPerPage;
 const currentItems = products.slice(start, start + itemsPerPage);
 const totalPages = Math.ceil(products.length / itemsPerPage);
@@ -28,8 +37,8 @@ return (
     <div className='flex items-end flex-wrap justify-end'>
         <div className=' lg:flex mt-4 lg:flex-wrap justify-between items-center '>
             {
-            currentItems.slice(0,10).map((item)=>(
-            <Singleres className={'overflow-ellipsis'} pimage={item.category.image} pname={item.category.slug}
+            currentItems.map((item)=>(
+            <Singleres className={'cursor-pointer'} Showdetails={handelShow} className={'overflow-ellipsis'} pimage={item.category.image} pname={item.category.slug}
                 pprice={item.price} pacce={item.title } />
             ))
             }
