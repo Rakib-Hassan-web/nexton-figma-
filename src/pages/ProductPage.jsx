@@ -1,17 +1,35 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import slidingimg1 from '../assets/image/product-27-1 (4) 1 (1).png';
 import slidingimg2 from '../assets/image/product-27-2 1.png';
 import slidingimg3 from '../assets/image/product-27-3 1.png';
 import slidingimg4 from '../assets/image/product-27-4 1.png';
 import slidingimg5 from '../assets/image/image-showing.png'; // your main image
-import { Link } from 'react-router';
+import { Link, useParams } from 'react-router';
 import { BsStars } from 'react-icons/bs';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
 import { HiMiniStar } from 'react-icons/hi2';
+import axios from 'axios';
 
 const ProductImageSlider = () => {
 const images = [slidingimg1, slidingimg2, slidingimg3, slidingimg4, ];
 const [selectedImg, setSelectedImg] = useState(images[0]);
+
+
+
+const [product , setprodect] =useState([])
+
+const perams =useParams()
+
+console.log(product)
+
+useEffect(()=>{
+
+axios.get(`https://api.escuelajs.co/api/v1/products/${perams.ProductID}`)
+.then((res)=>{setprodect(res.data)})
+
+.catch((error)=>{
+})
+} ,[])
 
 return (
 <>
@@ -56,9 +74,9 @@ return (
                     </div>
 
                     <div>
-                        <h2 className=' font-praymary font-semibold text-[24px] text-second'>$169.99</h2>
-                        <h3 className=' font-praymary font-medium text-[14px] text-praymary line-through'>$199.99
-                        </h3>
+                        <h2 className=' font-praymary font-semibold text-[24px] text-second'>{product.price}$</h2>
+                        {/* <h3 className=' font-praymary font-medium text-[14px] text-praymary line-through'>$199.99
+                        </h3> */}
                     </div>
 
 
@@ -158,11 +176,8 @@ return (
     <div className='   w-[804px]     border-[#E5E7EB]     my-[54px]  border-t-1'></div>
 
     <div className="infotext1">
-        <h2 className='text-[36px] text-second font-semibold font-praymary mb-1'>Black Automatic Watch</h2>
-        <p className='w-[735px] text-base text-praymary font-praymary font-normal'>The St. Louis Meramec Canoe Company
-            was founded by Alfred Wickett in 1922. Wickett had
-            previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic
-            wooden canoes in Valley Park, Missouri ceased in 1978.</p>
+        <h2 className='text-[36px] text-second font-semibold font-praymary mb-1'>{product.title}</h2>
+        <p className='w-[735px] text-base text-praymary font-praymary font-normal'>{product.description}</p>
     </div>
 
     <div className="fabric mt-[60px]">
