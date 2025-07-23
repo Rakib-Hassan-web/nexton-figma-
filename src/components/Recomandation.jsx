@@ -9,49 +9,16 @@ import { Link, useNavigate } from 'react-router';
 
 const Recomandation = () => {
 
-      const settings = {
-    infinite: true,
-    slidesToShow: 3,
-    speed: 500,
+  // ✅ Slider Config
+  const settings = {
     dots: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 320,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-        }
-      }
-    ]
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
   };
+  const [cartItems, setCartItems] = useState([]);
+
 
 
 const [product , setprodect] =useState([])
@@ -97,7 +64,18 @@ return (
           </div>
         </div> */}
 
- <div className="slider-container">
+
+
+ <Slider {...settings}>
+        {cartItems.map((item) => (
+     <Singleres HandleCart={()=>HandleCart(item)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+         
+        ))}
+      </Slider>
+
+
+
+ {/* <div className="slider-container">
                 <Slider {...settings}>
                     {
                       product.map((item)=>(
@@ -105,11 +83,11 @@ return (
                       ))
                     }  {
                       product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(item)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
                       ))
                     }  {
                       product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(item)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
                       ))
                     }  {
                       product.map((item)=>(
@@ -153,7 +131,7 @@ return (
                       ))
                     }
                 </Slider>
-            </div>
+            </div> */}
 
 
 
