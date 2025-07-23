@@ -9,14 +9,40 @@ import { Link, useNavigate } from 'react-router';
 
 const Recomandation = () => {
 
-var settings = {
-dots: true,
-infinite: true,
-speed: 500,
-slidesToShow: 4,
-slidesToScroll: 1,
-};
-
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
 
 
@@ -52,7 +78,7 @@ return (
           you</span>
       </h2>
 
-      <Slider {...settings}>
+      {/* <Slider {...settings}>
         <div>
           <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
             {
@@ -61,7 +87,52 @@ return (
             ))
             }
           </div>
+        </div> */}
+
+
+
+        <Slider {...settings}>
+                     
+
+ <div>
+         {
+                        product.map((item,i)=>{
+                            return(
+                                 <Singleres  Showdetails={handelShow} key={i} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
+                            )
+                        })
+                  }  
         </div>
+        <div>
+          <h3>2</h3>
+        </div>
+        <div>
+          <h3>3</h3>
+        </div>
+        <div>
+          <h3>4</h3>
+        </div>
+        <div>
+          <h3>5</h3>
+        </div>
+        <div>
+          <h3>6</h3>
+        </div>
+        <div>
+          <h3>7</h3>
+        </div>
+        <div>
+          <h3>8</h3>
+        </div>
+
+
+
+
+
+
+
+                          
+              </Slider>
        
 {/* 
 
@@ -155,7 +226,7 @@ return (
             }
           </div>
         </div> */}
-      </Slider>
+      {/* </Slider> */}
 
 
       <div className='  mt-15'>
