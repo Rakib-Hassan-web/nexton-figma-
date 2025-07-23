@@ -69,6 +69,10 @@ return (
                       product.map((item)=>(
                         <Singleres  Showdetails={()=>handelShow(item)} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
                       ))
+                    } {
+                      product.map((item)=>(
+                        <Singleres  Showdetails={()=>handelShow(item)} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                      ))
                     } 
                 </Slider>
             </div>
