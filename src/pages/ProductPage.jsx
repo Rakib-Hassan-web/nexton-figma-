@@ -8,11 +8,31 @@ import { HiMiniStar } from 'react-icons/hi2'
 import { HiOutlineShoppingBag } from 'react-icons/hi'
 import { Link } from 'react-router'
 import { BsStars } from 'react-icons/bs'
+import Slider from 'react-slick'
 
 const ProductPage = () => {
 
 
 const [color ,setcolor]=useState(true)
+
+
+  const settings = {
+    customPaging: function(i) {
+      return (
+        <Link className='w-[500px]'>
+         <img className='w-full' src={Mainimg} alt="mainIMG" />
+
+        </Link>
+      );
+    },
+    dots: true,
+    dotsClass: "slick-dots slick-thumb",
+    infinite: true,
+    speed: 500,
+  fade:true
+  };
+
+
 return (
 <>
 
@@ -25,17 +45,43 @@ return (
 
                 <div className="sliding_img flex flex-col gap-4 w-[140px]">
 
-                    <img className='img1' src={slidingimg1} alt="slidingimg" />
-                    <img className='img2' src={slidingimg2} alt="slidingimg" />
-                    <img className='img3' src={slidingimg3} alt="slidingimg" />
-                    <img className='img4' src={slidingimg4} alt="slidingimg" />
+  <div className="slider-container">
+      <Slider {...settings}>
+        <div>
+       
+                    <img className='img1  ' src={slidingimg1} alt="slidingimg" />
+        </div>
+        <div>
+                     <img className='img2' src={slidingimg2} alt="slidingimg" />
+
+        </div>
+        <div>
+                     <img className='img3' src={slidingimg3} alt="slidingimg" />
+
+        </div>
+        <div>
+                          <img className='img4' src={slidingimg4} alt="slidingimg" />
+
+        </div>
+      </Slider>
+    </div>
+
+
+
+
+
+
+
+
+
+
 
 
                 </div>
 
 
                 <div className="mainIMG w-[640px]">
-                    <img className='w-full' src={Mainimg} alt="mainIMG" />
+                    {/* <img className='w-full' src={Mainimg} alt="mainIMG" /> */}
                 </div>
 
                 <div className="InfoBorder w-[460px] h-[463px] border-[#E5E7EB] border-1 p-[33px] rounded-[16px]">

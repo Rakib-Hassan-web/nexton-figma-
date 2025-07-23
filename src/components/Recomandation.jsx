@@ -17,7 +17,6 @@ const Recomandation = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
   };
-  const [cartItems, setCartItems] = useState([]);
 
 
 
@@ -64,18 +63,7 @@ return (
           </div>
         </div> */}
 
-
-
- <Slider {...settings}>
-        {cartItems.map((item) => (
-     <Singleres HandleCart={()=>HandleCart(item)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
-         
-        ))}
-      </Slider>
-
-
-
- {/* <div className="slider-container">
+ <div className="slider-container">
                 <Slider {...settings}>
                     {
                       product.map((item)=>(
@@ -131,7 +119,7 @@ return (
                       ))
                     }
                 </Slider>
-            </div> */}
+            </div>
 
 
 
