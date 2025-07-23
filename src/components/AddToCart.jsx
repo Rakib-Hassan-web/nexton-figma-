@@ -16,7 +16,7 @@ return (
 
 <div  onClick={closeDiv} className='w-full h-screen bg-[#00000046] absolute top-0 left-0 z-12'></div>
 
-          <div className='bg-white z-20 pt-28 w-[500px] h-screen absolute top-0 right-0'> 
+          <div className='bg-white z-20 pt-18 w-[500px] h-screen absolute top-0 right-0'> 
             {/* -------------cart Heading------------ */}
             <div className="Cart_heading flex  items-center  justify-around gap-55">
                 <h2 className='text-[30px] font-semibold font-praymary text-second pl-5'>AddToCart</h2>
@@ -153,7 +153,7 @@ return (
                 </div>
                 {/* ------------check out button---------- */}
                 <Link
-                    className='w-full text-center bg-black mt-[10px] inline-block py-4 text-2xl text-white font-praymary font-semibold'>
+                    className='w-full text-center bg-black mt-[5px] inline-block py-4 text-2xl text-white font-praymary font-semibold'>
                 Check Out</Link>
             </div>
 

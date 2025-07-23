@@ -36,8 +36,8 @@ product.length=1
 
 const navigate = useNavigate()
 
-let handelShow =()=>{
-  navigate('/Product')
+let handelShow =(INFO)=>{
+  navigate(`/Product/${INFO.id}`)
 }
 
 return (
@@ -67,205 +67,14 @@ return (
                 <Slider {...settings}>
                     {
                       product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(item)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
+                        <Singleres  Showdetails={()=>handelShow(item)} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
                       ))
-                    }  {
-                      product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
-                      ))
-                    }  {
-                      product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
-                      ))
-                    }  {
-                      product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
-                      ))
-                    }  {
-                      product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
-                      ))
-                    }  {
-                      product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
-                      ))
-                    }  {
-                      product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
-                      ))
-                    }  {
-                      product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
-                      ))
-                    }  {
-                      product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
-                      ))
-                    }  {
-                      product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
-                      ))
-                    }  {
-                      product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
-                      ))
-                    }  {
-                      product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
-                      ))
-                    }  {
-                      product.map((item)=>(
-                        <Singleres HandleCart={()=>HandleCart(items)} Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title}/>
-                      ))
-                    }
+                    } 
                 </Slider>
             </div>
 
 
-
-
-
-
-
-
-
-{/* 
-        <Slider {...settings}>
-                     
-
- <div>
-         {
-                        product.map((item,i)=>{
-                            return(
-                                 <Singleres  Showdetails={handelShow} key={i} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
-                            )
-                        })
-                  }  
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-        <div>
-          <h3>7</h3>
-        </div>
-        <div>
-          <h3>8</h3>
-        </div>
-
-
-
-
-
-
-
-                          
-              </Slider> */}
-       
-{/* 
-
-       <div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,3).map((item)=>(
-            <Singleres Showdetails={handelShow} pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
-            ))
-            }
-          </div>
-        </div>
-        <div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,3).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
-            ))
-            }
-          </div>
-        </div>
-        <div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,3).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
-            ))
-            }
-          </div>
-        </div>
-        <div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,3).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
-            ))
-            }
-          </div>
-        </div>
-        <div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,3).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
-            ))
-            }
-          </div>
-        </div>
-        <div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,3).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
-            ))
-            }
-          </div>
-        </div>
-        <div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,3).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
-            ))
-            }
-          </div>
-        </div>
-        <div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,3).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
-            ))
-            }
-          </div>
-        </div>
-        <div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,3).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
-            ))
-            }
-          </div>
-        </div>
-        <div>
-          <div className=' lg:flex mt-5 lg:flex-wrap justify-between items-center'>
-            {
-            product.slice(0,3).map((item)=>(
-            <Singleres pimage={item.category.image} pname={item.category.slug} pprice={item.price} pacce={item.title} />
-            ))
-            }
-          </div>
-        </div> */}
-      {/* </Slider> */}
+{/* HandleCart={()=>HandleCart(item)} */}
 
 
       <div className='  mt-15'>

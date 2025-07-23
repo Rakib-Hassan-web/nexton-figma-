@@ -24,8 +24,9 @@ console.log(err);
 
 const navigate = useNavigate()
 
-let handelShow =()=>{
-  navigate('/Product')
+let handelShow =(Info)=>{
+  navigate(`/Product/${Info.id}`)
+  console.log(Info)
 }
 
 
@@ -38,7 +39,7 @@ return (
         <div className=' lg:flex mt-4 lg:flex-wrap justify-between items-center '>
             {
             currentItems.map((item)=>(
-            <Singleres Showdetails={handelShow} className={'overflow-ellipsis'} pimage={item.category.image} pname={item.category.slug}
+            <Singleres Showdetails={()=>handelShow(item)} className={'overflow-ellipsis'} pimage={item.category.image} pname={item.category.slug}
                 pprice={item.price} pacce={item.title } />
             ))
             }
