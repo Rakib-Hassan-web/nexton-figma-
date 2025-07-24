@@ -37,7 +37,7 @@ product.length=1
 const navigate = useNavigate()
 
 let handelShow =(INFO)=>{
-  navigate(`/Product/${INFO.id}`)
+  navigate(`/Product/${INFO.id}` , { state: { images: productInfo.images } })
 }
 
 return (
