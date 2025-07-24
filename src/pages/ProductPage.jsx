@@ -10,7 +10,7 @@ import { HiOutlineShoppingBag } from 'react-icons/hi';
 import { HiMiniStar } from 'react-icons/hi2';
 import axios from 'axios';
 
-const ProductImageSlider = () => {
+const ProductImageSlider = ({}) => {
 const images = [slidingimg1, slidingimg2, slidingimg3, slidingimg4, ];
 const [selectedImg, setSelectedImg] = useState(images[0]);
 
@@ -20,16 +20,16 @@ const [product , setprodect] =useState([])
 
 const perams =useParams()
 
-console.log(product)
 
 useEffect(()=>{
 
 axios.get(`https://api.escuelajs.co/api/v1/products/${perams.ProductID}`)
-.then((res)=>{setprodect(res.data)})
+.then((res)=>{setprodect(res)})
 
 .catch((error)=>{
 })
 } ,[])
+console.log(product.data)
 
 return (
 <>

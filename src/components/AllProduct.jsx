@@ -38,8 +38,8 @@ return (
     <div className='flex items-end flex-wrap justify-end'>
         <div className=' lg:flex mt-4 lg:flex-wrap justify-between items-center '>
             {
-            currentItems.map((item)=>(
-            <Singleres Showdetails={()=>handelShow(item)} className={'overflow-ellipsis'} pimage={item.category.image} pname={item.category.slug}
+            currentItems.map((item,i)=>(
+            <Singleres key={i} Showdetails={()=>handelShow(item)} className={'overflow-ellipsis'} pimage={item.category.image} pname={item.category.slug}
                 pprice={item.price} pacce={item.title } />
             ))
             }

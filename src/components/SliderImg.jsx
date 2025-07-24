@@ -2,18 +2,14 @@
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
-// import product from '../../assets/img/product.png'
-// import product1 from '../../assets/img/product1.jpg'
-// import product2 from'../../assets/img/product2.jpg'
-// import product3 from '../../assets/img/product3.jpg'
+
 
 // // Dummy image URLs (change to your actual image paths)
-// const images = [
-//   product,product1,product2,product3]
 
-// function WatchSlider() {
-//   const [nav1, setNav1] = useState(null);
-//   const [nav2, setNav2] = useState(null);
+// function WatchSlider({proImg,proSubImg}) {
+//     const [nav1, setNav1] = useState(null);
+//     const [nav2, setNav2] = useState(null);
+//     const images = [proSubImg,proSubImg,proSubImg,proSubImg]
 
 //   // Main big image settings
 //   const mainSettings = {
