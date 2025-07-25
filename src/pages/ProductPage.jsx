@@ -9,19 +9,10 @@ import { BsStars } from 'react-icons/bs';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
 import { HiMiniStar } from 'react-icons/hi2';
 import axios from 'axios';
-import { useLocation } from 'react-router-dom';
-// import { useState, useEffect } from 'react';
 
-const ProductImageSlider = ({}) => {
-// const images = [slidingimg1, slidingimg2, slidingimg3, slidingimg4, ];
+const ProductImageSlider = () => {
+const images = [slidingimg1, slidingimg2, slidingimg3, slidingimg4, ];
 const [selectedImg, setSelectedImg] = useState(images[0]);
-
-
-  const location = useLocation();
-  const { images } = location.state || {}; // images array পাবে
-  const [currentImage, setCurrentImage] = useState('');
-
-
 
 
 
@@ -29,19 +20,16 @@ const [product , setprodect] =useState([])
 
 const perams =useParams()
 
+console.log(product)
 
 useEffect(()=>{
 
 axios.get(`https://api.escuelajs.co/api/v1/products/${perams.ProductID}`)
-.then((res)=>{setprodect(res)})
-.catch((error)=>{console.log(error)})
-    if (images && images.length > 0) {
-      setCurrentImage(images[0]); // প্রথম ইমেজটা দেখাবে শুরুতে
-    }
+.then((res)=>{setprodect(res.data)})
 
-
-} ,[images])
-console.log(product.data)
+.catch((error)=>{
+})
+} ,[])
 
 return (
 <>
@@ -56,84 +44,22 @@ return (
 
 
 
-<div className="flex">
-  {/* Thumbnail গুলো */}
-  <div className="flex flex-col w-2/12 space-y-2 cursor-pointer">
-    {images?.map((imgSrc, i) => (
-      <img 
-        key={i}
-        src={imgSrc}
-        alt={`Thumbnail ${i}`}
-        className={`w-full object-contain ${currentImage === imgSrc ? 'border-2 border-blue-500' : ''}`}
-        onClick={() => setCurrentImage(imgSrc)}
-      />
-    ))}
-  </div>
 
-  {/* Main preview */}
-  <div className="flex-1 w-[500px] mr-[32px] ml-6">
-    <img 
-      src={currentImage} 
-      alt="Product Preview" 
-      className="w-full object-contain" 
-    />
-  </div>
-</div>
+        <div className="flex items-center gap-15">
+            {/* Thumbnails */}
+            <div className="flex flex-col gap-4 w-[140px]">
+                {images.map((img, index) => (
+                <img key={index} src={img} alt={`thumb-${index}`} className={`cursor-pointer rounded-md border ${
+                    selectedImg===img ? 'border-blue-500' : 'border-transparent' }`} onClick={()=> setSelectedImg(img)}
+                />
+                ))}
+            </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            {/* Main Image */}
+            <div className="w-[640px]">
+                <img src={selectedImg} alt="Selected" className="w-full rounded-lg shadow" />
+            </div>
+        </div>
 
 
         <div>
